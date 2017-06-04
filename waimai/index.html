@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <!--视口-->
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <title></title>
+  <script>
+    /* 设置rem单位*/
+    function setRem(){
+      var w=document.documentElement.clientWidth;
+      //w=w>=768?768:w;
+      document.querySelector('html').style.fontSize=w/20+'px';
+    }
+    setRem();
+    window.onresize=function(){
+      setRem();
+    }
+  </script>
+  <link rel="stylesheet" href="css/index.css"/>
+
+
+</head>
+<body>
+  <div class="layout">
+    <!--加载页面-->
+    <div class="view loading" data-load='false'>
+      <div class="load-logo">
+        <!--骑手-->
+        <div class="rider1-box">
+          <div class="rider1"></div>
+        </div>
+        <!-- 进度条-->
+        <div class="progress">
+          <div class="curr-progress"></div>
+        </div>
+        <!-- 文字-->
+        <div class="logo-txt">
+          <div class="txt"></div>
+        </div>
+      </div>
+      <!-- 底部-->
+      <div class="footer">
+        <div class="product-logo"></div>
+        <div class="product-logo-desc">@ 2015 Baidu Waimai Produced</div>
+      </div>
+    </div>
+    <!--第一屏-->
+    <div class="view page1">
+      <!-- 云朵-->
+      <div class="clouds"></div>
+      <!--草地-->
+      <div class="grass1"></div>
+      <!--树林-->
+      <div class="trees"></div>
+      <!-- 左右下角的草地-->
+      <div class="grass2 grass2-1"></div>
+      <div class="grass2 grass2-2"></div>
+      <!-- 一只可爱的外面熊-->
+      <div class="bear-title">
+        <img src="images/page1/hello.png" alt=""/>
+      </div>
+      <!-- 骑手-->
+      <div class="rider2">
+        <div class="rider2-in"></div>
+        <div class="rider2-shadow"></div>
+      </div>
+      <!-- 开始按钮-->
+      <div class="start">
+        <div class="start-btn"></div>
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+      </div>
+
+      <!-- 按钮描述-->
+      <div class="btn-desc">长按启动，观外卖之路</div>
+    </div>
+    <!--第二屏-->
+    <div class="view page2">
+      <!-- 标题-->
+      <div class="page2-title">
+        <div class="page2-title-pre"></div>
+        <div class="page2-title-con">
+          <div class="page2-title-txt">生活中,</div>
+          <div class="page2-title-desc">经常有这种时候...</div>
+        </div>
+      </div>
+      <!-- 工作-->
+      <div class="page2-work">
+        <div class="work-bg"></div>
+        <div class="work-con">
+          <div class="work-man"></div>
+          <div class="work-pager pager">
+            <div class="pager pager1"></div>
+            <div class="pager pager2"></div>
+          </div>
+        </div>
+        <div class="work-title">
+          <div class="work-txt"></div>
+        </div>
+      </div>
+      <!-- 生活-->
+      <div class="page2-life">
+        <div class="life-bg"></div>
+        <div class="life-con">
+          <div class="life-man"></div>
+          <div class="leg leg1"></div>
+          <div class="leg leg2"></div>
+        </div>
+        <div class="life-title">
+          <div class="life-txt"></div>
+        </div>
+      </div>
+      <!-- 餐厅-->
+      <div class="page2-restaurant">
+        <div class="res-bg"></div>
+        <div class="res-con">
+          <div class="person">
+            <div class="word word1"></div>
+            <div class="word word2"></div>
+            <div class="word word3"></div>
+            <div class="word word4"></div>
+          </div>
+        </div>
+        <div class="res-title">
+          <div class="res-txt"></div>
+        </div>
+      </div>
+      <!-- 熊-->
+      <div class="bear1"></div>
+      <!-- 球形-->
+      <div class="sphere"></div>
+      <!-- 箭头-->
+      <div class="arrow"></div>
+    </div>
+    <!--第三屏-->
+    <div class="view page3">
+
+      <!--标题-->
+      <div class="page3-title">
+        <div class="title-pre"></div>
+        <div class="title-con">
+          <div class="title-txt">这时候</div>
+          <div class="title-desc">
+            如果有一份美味外卖...<br>正好出现...
+          </div>
+        </div>
+      </div>
+      <!--思考的熊-->
+      <div class="thinking-bear">
+        <div class="think-bg"></div>
+        <div class="think-con">
+          <div class="bear2">
+            <div class="hand hand1"></div>
+            <div class="hand hand2"></div>
+            <!--气泡-->
+            <img class="face1" src="images/page3/face1.png" alt=""/>
+            <img class="face2" src="images/page3/face2.png" alt=""/>
+
+          </div>
+          <div class="table"></div>
+          <div class="food"></div>
+        </div>
+      </div>
+     <div class="sphere sphere2"></div>
+      <div class="arrow"></div>
+
+    </div>
+    <!--第四屏-->
+    <div class="view page4">
+      <!--标题-->
+      <div class="page4-title">
+        <div class="title-pre"></div>
+        <div class="title-con">
+          <div class="title-txt">这时候</div>
+          <div class="title-desc">
+            如果有一份美味外卖...<br>正好出现...
+          </div>
+        </div>
+      </div>
+      <!-- 品质-->
+      <div class="page4-quality">
+        <div class="qua-bg"></div>
+        <!--熊-->
+        <div class=" bear3-1"></div>
+        <div class="bear3 bear3-2"></div>
+        <div class="bear3 bear3-3"></div>
+        <div class="bear3 bear3-4"></div>
+        <!---->
+        <div class="qua-pic">
+          <img class="evil" src="images/page4/evil2.png" alt=""/>
+          <img class="license" src="images/page4/license.png" alt=""/>
+          <img class="oil" src="images/page4/oil.png" alt=""/>
+        </div>
+      </div>
+      <!--底部-->
+      <div class="sphere sphere2"></div>
+      <div class="arrow"></div>
+    </div>
+    <!--第五屏-->
+    <div class="view page5">
+      <!--标题-->
+      <div class="page5-title">
+        <div class="title-pre"></div>
+        <div class="title-con">
+          <div class="title-txt">百度外卖</div>
+          <div class="title-desc">
+            只做有品质的外卖...<br>操作快捷...
+          </div>
+        </div>
+      </div>
+      <!--订单-->
+      <div class="page5-order">
+        <div class="order-bg"></div>
+        <div class="bear4"></div>
+        <div class="menu">
+          <img src="images/page5/card1.png" alt="" class="menu menu1"/>
+          <img src="images/page5/card2.png" alt="" class="menu menu2"/>
+          <img src="images/page5/card3.png" alt="" class="menu menu3"/>
+        </div>
+      </div>
+      <!--底部-->
+      <div class="sphere sphere2"></div>
+      <div class="arrow"></div>
+    </div>
+    <!--第六屏-->
+    <div class="view page6">
+      <!--标题-->
+      <div class="page6-title">
+        <div class="title-pre"></div>
+        <div class="title-con">
+          <div class="title-txt">无论前方</div>
+          <div class="title-desc">
+            狂风，大雨，还是飘雪...<br>始终坚持在路上...
+          </div>
+        </div>
+      </div>
+      <!-- 路上-->
+      <div class="page6-onroad">
+        <div class="road-bg"></div>
+        <div class="could"></div>
+        <div class="weather">
+          <div class="piece piece-1"></div>
+          <div class="piece piece-5"></div>
+          <div class="piece piece-3"></div>
+          <div class="piece piece-2"></div>
+          <div class="piece piece-1"></div>
+          <div class="piece piece-6"></div>
+          <div class="piece piece-1"></div>
+          <div class="piece piece-4"></div>
+          <div class="piece piece-2"></div>
+          <div class="piece piece-5"></div>
+          <div class="piece piece-3"></div>
+          <div class="piece piece-5"></div>
+        </div>
+        <div class="rider3">
+          <div class="rider3-in"></div>
+          <div class="rider3-shadow"></div>
+        </div>
+      </div>
+      <!--底部-->
+      <div class="sphere sphere5"></div>
+      <div class="arrow"></div>
+    </div>
+    <!--第七屏-->
+    <div class="view page7">
+      <!-- 标题-->
+      <div class="page7-title">
+        <div class="title-pre"></div>
+        <div class="title-con">
+          <div class="title-txt">丰富礼品</div>
+          <div class="title-desc">
+            让你边吃，边省钱...
+          </div>
+        </div>
+      </div>
+      <!-- 礼品-->
+      <div class="gift">
+        <div class="gift-bg"></div>
+        <div class="bear5"></div>
+        <div class="gift-c">
+          <img  class="gift gift1" src="images/page7/gift1.png" alt=""/>
+          <img  class="gift gift2" src="images/page7/gift2.png" alt=""/>
+          <img  class="gift gift3" src="images/page7/gift3.png" alt=""/>
+          <img  class="gift gift4" src="images/page7/gift4.png" alt=""/>
+          <img  class="gift gift5" src="images/page7/gift5.png" alt=""/>
+          <img  class="gift gift6" src="images/page7/gift6.png" alt=""/>
+          <img  class="gift gift7" src="images/page7/gift7.png" alt=""/>
+          <img  class="gift gift8" src="images/page7/gift8.png" alt=""/>
+          <img  class="gift gift9" src="images/page7/gift9.png" alt=""/>
+          <img  class="gift gift10" src="images/page7/gift10.png" alt=""/>
+          <img  class="gift gift11" src="images/page7/gift11.png" alt=""/>
+          <img  class="gift gift12" src="images/page7/gift12.png" alt=""/>
+        </div>
+      </div>
+      <!--底部-->
+      <div class="sphere sphere5"></div>
+      <div class="arrow"></div>
+    </div>
+    <!--第八屏-->
+    <div class="view page8">
+      <div class="page8-title">
+        <div class="title-pre"></div>
+        <div class="title-con">
+          <div class="title-txt">所有的努力</div>
+          <div class="title-desc">
+           就是为了健康美味的外面...<br>呈现给你...
+          </div>
+        </div>
+      </div>
+      <div class="star"></div>
+      <div class="page8-con">
+        <div class="moto"></div>
+        <div class="streetlight"></div>
+        <div class="lamplight"></div>
+        <div class="bear6">
+          <div class="heart heart1"><img src="images/page8/heart.png" alt=""/></div>
+          <div class="heart heart2"><img src="images/page8/heart.png" alt=""/></div>
+          <div class="heart heart3"><img src="images/page8/heart.png" alt=""/></div>
+        </div>
+        <div class="btn-share"></div>
+        <div class="product">
+          waimai.baidu.com
+        </div>
+      </div>
+      <div class="sphere sphere8"></div>
+    </div>
+    <div class="music">
+      <audio src="images/hlw.mp3"></audio>
+    </div>
+  </div>
+  <script src="lib/zepto/zepto.min.js"></script>
+  <script src="lib/zepto/fx.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

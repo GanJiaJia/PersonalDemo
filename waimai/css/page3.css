@@ -1,0 +1,217 @@
+.page3 {
+  z-index: 6;
+  background-color: #f04045;
+  /*����*/
+  /*����*/
+}
+.page3 .page3-title {
+  position: relative;
+  left: 0;
+  top: 0;
+  padding-left: 0.625rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  color: #fff;
+}
+.page3 .page3-title .title-pre {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.15625rem;
+  height: 100%;
+  background-color: #fff;
+  -webkit-transform-origin: top;
+  -webkit-transform: scaleY(0);
+}
+.page3 .page3-title .title-con {
+  opacity: 0;
+}
+.page3 .page3-title .title-con .title-txt {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.page3 .thinking-bear .think-bg {
+  width: 18.5rem;
+  height: 15.3125rem;
+  left: 1rem;
+  bottom: 9.6rem;
+  position: absolute;
+  background: url(../images/page3/bg4_.png);
+  background-size: 100% 100%;
+  opacity: 0;
+  /*�任*/
+  -webkit-transform: rotateZ(90deg);
+  -webkit-transform-origin: 9rem 37.85rem;
+}
+.page3 .thinking-bear .think-con {
+  position: absolute;
+  width: 16.0625rem;
+  height: 8.0625rem;
+  left: 2.5rem;
+  bottom: 4.375rem;
+  z-index: 4;
+}
+.page3 .thinking-bear .think-con .table {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url(../images/page3/table.png);
+  background-size: 100% 100%;
+  opacity: 0;
+}
+.page3 .thinking-bear .think-con .bear2 {
+  width: 7.1rem;
+  height: 10.5rem;
+  left: 4.3125rem;
+  bottom: 4.875rem;
+  position: absolute;
+  background: url(../images/page3/bear2.png) no-repeat;
+  background-position: -3.2rem -3rem;
+  background-size: 11.1875rem 13rem;
+  opacity: 0;
+}
+.page3 .thinking-bear .think-con .bear2 .hand {
+  width: 2.3125rem;
+  height: 2.40625rem;
+  position: absolute;
+  top: 5.25rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+.page3 .thinking-bear .think-con .bear2 .hand1 {
+  left: 1.125rem;
+  background-image: url(../images/page3/hand-left_.png);
+  -webkit-transform-origin: left bottom;
+}
+.page3 .thinking-bear .think-con .bear2 .hand2 {
+  background-image: url(../images/page3/hand-right.png);
+  left: 3.375rem;
+  -webkit-transform-origin: right bottom;
+}
+.page3 .thinking-bear .think-con .bear2 .face1 {
+  width: 3.1875rem;
+  height: 3.1875rem;
+  background-position: 0rem -3.5rem;
+  left: -3.2rem;
+  top: .5rem;
+  position: absolute;
+  transform: scale(0);
+}
+.page3 .thinking-bear .think-con .bear2 .face2 {
+  width: 3.1875rem;
+  height: 3.1875rem;
+  background-position: -8rem 0rem;
+  right: -1rem;
+  top: -3rem;
+  position: absolute;
+  transform: scale(0);
+}
+.page3 .thinking-bear .think-con .food {
+  width: 11.0625rem;
+  height: 4.75rem;
+  left: 2.5625rem;
+  bottom: 6rem;
+  position: absolute;
+  background: url(../images/page3/foods.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  opacity: 0;
+}
+.page3 .sphere {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20rem;
+  height: 11.125rem;
+  background: url(../images/page3/sphere2.png) no-repeat;
+  -webkit-background-size: 100%  100%;
+  z-index: 1;
+}
+.page3 .arrow {
+  width: 1.71875rem;
+  height: 1.71875rem;
+  position: absolute;
+  left: 9.140625rem;
+  bottom: .5rem;
+  opacity: 0;
+  background: url(../images/arrow.png) no-repeat;
+  background-size: 100% 100%;
+  z-index: 3;
+}
+/*���Ӷ���*/
+.page3.active .page3-title .title-pre {
+  -webkit-animation: vbig .5s 0s linear forwards;
+}
+.page3.active .page3-title .title-con {
+  -webkit-animation: titlein .25s 0s linear forwards;
+}
+.page3.active .thinking-bear .think-bg {
+  -webkit-animation: roatein2 2.5s 0s ease-in-out forwards;
+}
+.page3.active .thinking-bear .think-con .bear2 {
+  -webkit-animation: upin 1s 1s ease-in-out forwards;
+}
+.page3.active .thinking-bear .think-con .bear2 .hand1 {
+  -webkit-animation: handleftrotate .6s 1.2s linear infinite alternate;
+}
+.page3.active .thinking-bear .think-con .bear2 .hand2 {
+  -webkit-animation: handrightrotate .6s 1.2s linear infinite alternate;
+}
+.page3.active .thinking-bear .think-con .bear2 .face1,
+.page3.active .thinking-bear .think-con .bear2 .face2 {
+  -webkit-animation: scalein 1s 2s ease-in-out forwards;
+}
+.page3.active .thinking-bear .table {
+  -webkit-animation: downin 1s 0.5s ease-in-out forwards;
+}
+.page3.active .thinking-bear .food {
+  -webkit-animation: downin 1s 1.5s ease-in-out forwards;
+}
+.page3.active .arrow {
+  -webkit-animation: arrow 1s 1s linear infinite;
+}
+/*����������*/
+@-webkit-keyframes upin {
+  0% {
+    -webkit-transform: translateY(5rem);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translateY(-0.5rem);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(0.25rem);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+/*����*/
+@-webkit-keyframes handleftrotate {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0rem, 0rem, 0rem);
+  }
+  50% {
+    -webkit-transform: rotateZ(0deg) translate3d(0rem, 0rem, 0rem);
+  }
+  100% {
+    -webkit-transform: rotateZ(-3deg) translate3d(0rem, 0rem, 0rem);
+  }
+}
+/*����*/
+@-webkit-keyframes handrightrotate {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0rem, 0rem, 0rem);
+  }
+  50% {
+    -webkit-transform: rotateZ(0deg) translate3d(0rem, 0rem, 0rem);
+  }
+  100% {
+    -webkit-transform: rotateZ(3deg) translate3d(0rem, 0rem, 0rem);
+  }
+}

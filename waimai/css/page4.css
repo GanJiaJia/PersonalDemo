@@ -1,0 +1,190 @@
+.page4 {
+  z-index: 5;
+  background-color: #df8904;
+  /*����*/
+  /* ����ģ��*/
+  /*�ײ�*/
+  /*��ͷ*/
+}
+.page4 .page4-title {
+  position: relative;
+  left: 0;
+  top: 0;
+  padding-left: 0.625rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  color: #fff;
+}
+.page4 .page4-title .title-pre {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.15625rem;
+  height: 100%;
+  background-color: #fff;
+  -webkit-transform-origin: top;
+  -webkit-transform: scaleY(0);
+}
+.page4 .page4-title .title-con {
+  opacity: 0;
+}
+.page4 .page4-title .title-con .title-txt {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.page4 .page4-quality .qua-bg {
+  width: 18.5rem;
+  height: 18.125rem;
+  left: .875rem;
+  bottom: 8.5rem;
+  position: absolute;
+  background: url(../images/page4/bg5.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-transform: rotateZ(90deg);
+  -webkit-transform-origin: 9.125rem 39.5625rem;
+}
+.page4 .page4-quality .bear3 {
+  position: absolute;
+  left: 40rem;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  z-index: 4;
+  display: none;
+}
+.page4 .page4-quality .bear3-1 {
+  width: 6.4375rem;
+  height: 10.03125rem;
+  left: 7rem;
+  bottom: 6rem;
+  background: url(../images/page4/bear3.png);
+  background-size: 100% 100%;
+  position: absolute;
+  z-index: 4;
+  opacity: 0;
+}
+.page4 .page4-quality .bear3-1 .changebear {
+  -webkit-animation: changebear 1s 0.4s linear forwards;
+}
+.page4 .page4-quality .bear3-2 {
+  background-image: url(../images/page4/bear3-1-1.png);
+  width: 7.84375rem;
+  height: 10.46875rem;
+  left: 6.25rem;
+}
+.page4 .page4-quality .bear3-3 {
+  background-image: url(../images/page4/bear3-2-1.png);
+  width: 6.71875rem;
+  height: 9.78125rem;
+  left: 6.640625rem;
+}
+.page4 .page4-quality .bear3-4 {
+  background-image: url(../images/page4/bear3-3-1.png);
+  width: 9.0625rem;
+  height: 10.03125rem;
+  left: 5.46875rem;
+}
+.page4 .page4-quality .qua-pic {
+  position: absolute;
+  left: 50%;
+  bottom: 10rem;
+  z-index: 4;
+}
+.page4 .page4-quality .qua-pic .license {
+  width: 6.15625rem;
+  height: 4.375rem;
+  right: 2.625rem;
+  bottom: 5.5rem;
+  position: absolute;
+  -webkit-transform: scale(0);
+}
+.page4 .page4-quality .qua-pic .oil {
+  width: 6.40625rem;
+  left: -3rem;
+  bottom: 10.5rem;
+  position: absolute;
+  -webkit-transform: scale(0);
+}
+.page4 .page4-quality .qua-pic .evil {
+  width: 6.1875rem;
+  height: 5.09375rem;
+  left: 2.875rem;
+  bottom: 5rem;
+  position: absolute;
+  -webkit-transform: scale(0);
+}
+.page4 .sphere {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20rem;
+  height: 11.125rem;
+  background: url(../images/page4/sphere3.png) no-repeat;
+  -webkit-background-size: 100%  100%;
+  z-index: 1;
+}
+.page4 .arrow {
+  width: 1.71875rem;
+  height: 1.71875rem;
+  position: absolute;
+  left: 9.140625rem;
+  bottom: .5rem;
+  opacity: 0;
+  background: url(../images/arrow.png) no-repeat;
+  background-size: 100% 100%;
+  z-index: 3;
+}
+.page4.active {
+  /*ͷ������*/
+}
+.page4.active .page4-title .title-pre {
+  -webkit-animation: vbig .5s 0s linear forwards;
+}
+.page4.active .page4-title .title-con {
+  -webkit-animation: titlein .25s 0s linear forwards;
+}
+.page4.active .page4-quality .qua-bg {
+  -webkit-animation: roatein2 2.5s 0s ease-in-out forwards;
+}
+.page4.active .page4-quality .bear3-1 {
+  -webkit-animation: downin 1s 0s ease-out forwards;
+}
+.page4.active .page4-quality .qua-pic .evil,
+.page4.active .page4-quality .qua-pic .license,
+.page4.active .page4-quality .qua-pic .oil {
+  -webkit-animation: shuffle .5s 2s linear infinite;
+  -webkit-transition: all 0.4s 0.5s;
+  -webkit-transform: scale(1);
+}
+.page4.active .page4-quality .qua-pic .breakdown {
+  -webkit-animation: breakdown 2s 1.5s ease-in forwards;
+}
+.page4.active .arrow {
+  -webkit-animation: arrow 1s 1s linear infinite;
+}
+@-webkit-keyframes breakdown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate(0rem, 0rem);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translate(0rem, 0rem);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0rem, 15rem);
+  }
+}
+/* �л�С�ܵĶ���*/
+@-webkit-keyframes changebear {
+  0% {
+    background-image: url(../images/page4/bear3-1-1.png) !important;
+  }
+  50% {
+    background-image: url(../images/page4/bear3-2-1.png);
+  }
+  100% {
+    background-image: url(../images/page4/bear3-3-1.png);
+  }
+}

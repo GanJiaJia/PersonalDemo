@@ -1,0 +1,232 @@
+.page6{
+  background-color: #0097d1;
+  z-index: 3;
+  /*标题*/
+  .page6-title{
+    position: relative;
+    left:0;
+    top:0;
+    padding-left:20/32rem;
+    margin-left:1rem;
+    margin-top:1rem;
+    color:#fff;
+    .title-pre{
+      position: absolute;
+      left:0;
+      top:0;
+      width: 5/32rem;
+      height: 100%;
+      background-color: #fff;
+
+      -webkit-transform-origin:top;
+      -webkit-transform: scaleY(0);
+    }
+    .title-con{
+      opacity: 0;
+      .title-txt{
+        font-size: 2rem;
+        font-weight: 700;
+      }
+    }
+  }
+  /*主体*/
+  .page6-onroad{
+    .road-bg{
+      width: 18.5625rem;
+      height: 15.40625rem;
+      left: .71875rem;
+      bottom: 9.375rem;
+      position: absolute;
+      background:url(../images/page6/bg7.png);
+      -webkit-background-size: 100% 100%;
+      opacity: 0;
+      -webkit-transform: rotateZ(90deg);
+      -webkit-transform-origin: 9.28125rem 37.71875rem;
+    }
+    .weather{
+      position: absolute;
+      width: 20rem;
+      height: 12.5rem;
+      left: 0;
+      bottom: 7rem;
+      overflow: hidden;
+      opacity: 0;
+
+      >div{
+        position: absolute;
+      }
+
+
+      .piece-2,
+      .piece-3,
+      .piece-4 {
+        -webkit-animation: pieceflying1 2.5s 0s linear infinite
+      }
+
+      .piece-1 {
+        -webkit-animation: pieceflying2 2s 0s linear infinite
+      }
+
+      .piece-5 {
+        -webkit-animation: pieceflying3 3s 0s linear infinite
+      }
+
+      .piece-6 {
+        -webkit-animation: pieceflying1 2s 0s linear infinite
+      }
+
+      .piece{
+        background:url(../images/page6/snow-piece.png) no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+        width: 10px;
+        height: 10px;
+      }
+    }
+    .could{
+      position: absolute;
+      left: 3.625rem;
+      bottom: 20rem;
+      width: 13.5rem;
+      height: 5rem;
+      background:url(../images/page6/weather-cloud.png);
+      -webkit-background-size: 100% 100%;
+      opacity: 0;
+    }
+    .rider3{
+      z-index: 4;
+      position: absolute;
+      width: 6rem;
+      height: 10rem;
+      left: 6.8rem;
+      bottom: 6.25rem;
+      opacity: 0;
+      .rider3-in{
+        width: 100%;
+        height: 100%;
+        background:url(../images/page6/rider2.png) no-repeat;
+        background-size:100% 100%;
+      }
+      .rider3-shadow{
+        background-color: #45c5ec;
+        width: 4.125rem;
+        height: .9375rem;
+        position: absolute;
+        left: 1rem;
+        bottom: -.5rem;
+        z-index: 1;
+        background-color: red;
+        background: url(../images/page6/shadow.png) no-repeat;
+        background-size:100%;
+        transform:scale(0);
+      }
+    }
+  }
+
+
+  /*底部*/
+  .sphere{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20rem;
+    height: 11.125rem;
+    background:url(../images/page6/sphere5.png) no-repeat;
+    -webkit-background-size: 100%  100%;
+    z-index:1;
+  }
+  /*箭头*/
+  .arrow{
+    width: 1.71875rem;
+    height: 1.71875rem;
+    position: absolute;
+    left: 9.140625rem;
+    bottom: .5rem;
+    opacity: 0;
+    background:url(../images/arrow.png) no-repeat;
+    background-size: 100% 100%;
+    z-index:3;
+  }
+}
+
+.page6.active{
+  /*头部动画*/
+  .page6-title{
+    .title-pre{
+      -webkit-animation: vbig .5s 0s linear forwards;
+    }
+    .title-con{
+      -webkit-animation: titlein .25s 0s linear forwards;
+    }
+  }
+  /*主体动画*/
+  .page6-onroad{
+    .road-bg{
+      -webkit-animation: roatein2 2.5s 0s ease-in-out forwards;
+    }
+    .could{
+      opacity: 1;
+      -webkit-animation: shuffle 1s 0s ease-in-out alternate infinite;
+    }
+    .weather{
+      -webkit-animation: fadein 0.3s  1.3s forwards;
+    }
+    .rider3{
+      -webkit-animation: downinrider2 1s 1s ease-in-out forwards;
+      .rider3-in{
+        -webkit-animation: rider3drive .5s 0s linear infinite;
+      }
+      .rider3-shadow{
+        -webkit-animation: bigger .5s .25s linear infinite;
+      }
+    }
+  }
+
+  /*底部*/
+  .arrow{
+    -webkit-animation: arrow 1s 1s linear infinite;
+  }
+}
+
+
+/*动画*/
+@-webkit-keyframes rider3drive {
+  0% {
+    -webkit-transform: translateY(0rem) scale(1.2)
+  }
+  50% {
+    -webkit-transform: translateY(-.5rem) scale(1.2)
+  }
+  100% {
+    -webkit-transform: translateY(0rem) scale(1.2)
+  }
+}
+
+
+
+@-webkit-keyframes pieceflying1 {
+  0% {
+    -webkit-transform: translate3d(0rem, 0rem, 0rem) rotateZ(0deg) scale(1)
+  }
+  100% {
+    -webkit-transform: translate3d(-2rem, 12rem, 0rem) rotateZ(120deg) scale(1)
+  }
+}
+
+@-webkit-keyframes pieceflying2 {
+  0% {
+    -webkit-transform: translate3d(0rem, 0rem, 0rem) rotateZ(0deg) scale(0.75)
+  }
+  100% {
+    -webkit-transform: translate3d(-2rem, 12rem, 0rem) rotateZ(120deg) scale(0.75)
+  }
+}
+
+@-webkit-keyframes pieceflying3 {
+  0% {
+    -webkit-transform: translate3d(0rem, 0rem, 0rem) rotateZ(0deg) scale(1.25)
+  }
+  100% {
+    -webkit-transform: translate3d(-2rem, 12rem, 0rem) rotateZ(180deg) scale(1.25)
+  }
+}

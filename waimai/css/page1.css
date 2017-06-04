@@ -1,0 +1,327 @@
+/*��һ��*/
+.page1 {
+  z-index: 8;
+  background-color: deepskyblue;
+}
+.page1 .clouds {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20rem;
+  height: 21.03125rem;
+  background: url(../images/page1/clouds.png) no-repeat;
+  background-size: 100%;
+}
+.page1 .grass1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20rem;
+  height: 12.375rem;
+  background: url(../images/page1/grass1.png) no-repeat;
+  background-size: 100%;
+  -webkit-transform: rotateX(-75deg);
+  transform-origin: bottom;
+}
+.page1 .trees {
+  position: absolute;
+  left: 0.75rem;
+  bottom: 11rem;
+  width: 18.71875rem;
+  height: 2.21875rem;
+  background: url(../images/page1/trees.png) no-repeat;
+  background-size: 100%;
+  opacity: 0;
+}
+.page1 .grass2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10rem;
+  height: 7.125rem;
+  background: url(../images/page1/grass2.png) left bottom no-repeat;
+  background-size: 200% 100%;
+  -webkit-transform: translate3d(-10rem, 7.125rem, 0rem);
+}
+.page1 .grass2-2 {
+  left: auto;
+  right: 0;
+  background-position: right bottom;
+  -webkit-transform: translate3d(10rem, 7.125rem, 0rem);
+}
+.page1 .bear-title {
+  position: absolute;
+  left: 3.5rem;
+  top: 4.6%;
+  width: 12.40625rem;
+  height: 7rem;
+  background: url(../images/page1/theme-title.png) no-repeat;
+  background-size: 100% 100%;
+  -webkit-transform: translateY(-10rem);
+  opacity: 0;
+}
+.page1 .bear-title img {
+  position: absolute;
+  right: 0.25rem;
+  top: 0.625rem;
+  width: 2.34375rem;
+  height: 2.1875rem;
+  cursor: pointer;
+  -webkit-transform: scale(0);
+}
+.page1 .rider2 {
+  position: absolute;
+  left: 8rem;
+  bottom: 10.8125rem;
+  width: 5.21875rem;
+  height: 8.71875rem;
+  -webkit-transform: translateY(-5rem) scale(1);
+  opacity: 0;
+}
+.page1 .rider2 .rider2-in {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/page1/rider2.png) no-repeat;
+  background-size: 100%;
+}
+.page1 .rider2 .rider2-shadow {
+  position: absolute;
+  left: 0.5rem;
+  bottom: -0.5rem;
+  width: 4.125rem;
+  height: 1rem;
+  background: url(../images/page1/jet1.png) no-repeat;
+  background-size: 100%;
+  -webkit-transform: translate3d(0rem, 0rem, 0rem) scale(0);
+  opacity: 1;
+}
+.page1 .start {
+  position: absolute;
+  left: 7.2rem;
+  bottom: 2.7rem;
+  width: 6.5rem;
+  height: 6.5rem;
+  opacity: 0;
+}
+.page1 .start-btn,
+.page1 .circle1,
+.page1 .circle2 {
+  position: absolute;
+  background: url(../images/page1/bear-btn-pre.png) no-repeat center;
+  -webkit-background-size: 50%;
+  background-size: 50%;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.page1 .circle1 {
+  background: url(../images/page1/circle1.png);
+  background-size: 100%;
+}
+.page1 .circle2 {
+  background: url(../images/page1/circle2.png);
+  background-size: 100%;
+}
+.page1 .btn-desc {
+  position: absolute;
+  bottom: 1.2rem;
+  width: 100%;
+  height: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  color: #617421;
+}
+.page1.active .grass1 {
+  -webkit-animation: land 0.5s linear forwards;
+}
+.page1.active .grass2-1 {
+  -webkit-animation: leftdownin 0.5s 0.25s linear forwards;
+}
+.page1.active .grass2-2 {
+  -webkit-animation: rightdownin 0.5s 0.25s linear forwards;
+}
+.page1.active .trees {
+  -webkit-animation: downintrees 1s 0.5s ease-in-out forwards;
+}
+.page1.active .bear-title {
+  -webkit-animation: downin 1s 1.5s linear forwards;
+}
+.page1.active .bear-title img {
+  -webkit-animation: scalein 1s 2s ease-in-out forwards;
+}
+.page1.active .rider2 {
+  -webkit-animation: downinrider2 1s 1s ease-in-out forwards;
+}
+.page1.active .rider2 .rider2-in {
+  -webkit-animation: rider2jump .5s 0s linear infinite;
+}
+.page1.active .rider2 .rider2-shadow {
+  -webkit-animation: bigger .5s .25s linear infinite;
+}
+.page1.active .start {
+  -webkit-animation: fadein 1s 0.5s forwards;
+}
+.page1.active .circle2 {
+  -webkit-animation: fadein 1s 0.5s forwards, rotation 1.2s steps(53) infinite;
+}
+/*--------------��һ������--------------*/
+@-webkit-keyframes land {
+  0% {
+    -webkit-transform: rotateX(-75deg);
+  }
+  80% {
+    -webkit-transform: rotateX(0deg);
+  }
+  90% {
+    -webkit-transform: rotateX(-5deg);
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+  }
+}
+@-webkit-keyframes leftdownin {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-10rem, 7.125rem, 0rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0rem, 0rem, 0rem);
+  }
+}
+@-webkit-keyframes rightdownin {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(10rem, 7.125rem, 0rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0rem, 0rem, 0rem);
+  }
+}
+@-webkit-keyframes downintrees {
+  0% {
+    -webkit-transform: translateY(-1rem);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translateY(0.25rem);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(-0.125rem);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes downin {
+  0% {
+    -webkit-transform: translateY(-10rem);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translateY(0.5rem);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(-0.25rem);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes scalein {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  80% {
+    -webkit-transform: scale(1.1);
+  }
+  90% {
+    -webkit-transform: scale(0.95);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+@-webkit-keyframes rider2jump {
+  0% {
+    -webkit-transform: translateY(0rem) scale(1);
+    opacity: 1;
+  }
+  50% {
+    -webkit-transform: translateY(-0.5rem) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0rem) scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes downinrider2 {
+  0% {
+    -webkit-transform: translateY(-5rem) scale(1);
+    opacity: 0;
+  }
+  60% {
+    -webkit-transform: translateY(0.5rem) scale(1);
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translateY(-0.25rem) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(0rem) scale(1);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes bigger {
+  0% {
+    -webkit-transform: translate3d(0rem, 0rem, 0rem) scale(0);
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+    -webkit-transform: translate3d(0rem, -0.5rem, 0rem) scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0rem, -0.5rem, 0rem) scale(1.2);
+  }
+}
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(340deg);
+  }
+}
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes rider2drive {
+  0% {
+    opacity: 1;
+    -webkit-transform: scale(1) translate(0rem, 0rem);
+  }
+  100% {
+    opacity: .5;
+    -webkit-transform: scale(2) translate(0rem, 3rem);
+  }
+}

@@ -1,0 +1,151 @@
+.page8 {
+  z-index: 1;
+  background-color: #1b052c;
+  /*����*/
+  /*�ײ�*/
+}
+.page8 .page8-title {
+  position: relative;
+  left: 0;
+  top: 0;
+  padding-left: 0.625rem;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  color: #fff;
+}
+.page8 .page8-title .title-pre {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.15625rem;
+  height: 100%;
+  background-color: #fff;
+  -webkit-transform-origin: top;
+  -webkit-transform: scaleY(0);
+}
+.page8 .page8-title .title-con {
+  opacity: 0;
+}
+.page8 .page8-title .title-con .title-txt {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.page8 .page8-con .moto {
+  width: 6.25rem;
+  height: 4.28125rem;
+  position: absolute;
+  left: 3.6rem;
+  bottom: 10.25rem;
+  z-index: 4;
+  opacity: 1;
+  background: url(../images/page8/moto.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.page8 .page8-con .streetlight {
+  width: 2.5rem;
+  height: 13.84375rem;
+  left: 7.5rem;
+  bottom: 9rem;
+  position: absolute;
+  background: url(../images/page8/streetlight.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.page8 .page8-con .lamplight {
+  width: 13.65625rem;
+  height: 13.21875rem;
+  left: 3.125rem;
+  bottom: 9.25rem;
+  position: absolute;
+  background: url(../images/page8/lamplight.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.page8 .page8-con .bear6 {
+  width: 8.625rem;
+  height: 8.46875rem;
+  left: 6.875rem;
+  bottom: 8.75rem;
+  position: absolute;
+  background: url(../images/page8/bear6.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  z-index: 4;
+}
+.page8 .page8-con .bear6 .heart img {
+  width: 100%;
+  height: 100%;
+}
+.page8 .page8-con .bear6 .heart1 {
+  position: absolute;
+  width: 1.28125rem;
+  height: 1.21875rem;
+  left: 6.25rem;
+  top: -2.25rem;
+}
+.page8 .page8-con .bear6 .heart2 {
+  width: 1.025rem;
+  height: .975rem;
+  left: 4.25rem;
+  top: -1.75rem;
+  position: absolute;
+}
+.page8 .page8-con .bear6 .heart3 {
+  width: .76875rem;
+  height: .73125rem;
+  position: absolute;
+  left: 8rem;
+  top: -1rem;
+  -webkit-transform: rotate(24deg);
+}
+.page8 .page8-con .btn-share {
+  position: absolute;
+  width: 11.84375rem;
+  height: 3.53125rem;
+  left: 4.078125rem;
+  bottom: 4.25rem;
+  background: url(../images/page8/share.png) no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  z-index: 4;
+}
+.page8 .page8-con .product {
+  text-align: center;
+  color: #b66ed9;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+}
+.page8 .sphere {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20rem;
+  height: 12rem;
+  background: url(../images/page8/sphere7.png) no-repeat;
+  -webkit-background-size: 100%  100%;
+  z-index: 1;
+}
+.page8.active {
+  /*ͷ������*/
+}
+.page8.active .page8-title .title-pre {
+  -webkit-animation: vbig .5s 0s linear forwards;
+}
+.page8.active .page8-title .title-con {
+  -webkit-animation: titlein .25s 0s linear forwards;
+}
+.page8.active .page8-con .bear6 img {
+  -webkit-animation: shine1 1s 0s linear infinite;
+}
+@-webkit-keyframes shine1 {
+  0% {
+    -webkit-transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
