@@ -3,7 +3,7 @@
 
 1.  仿乐乎app界面
 
-![lofter](../../../../../lofter.jpg)
+![lofter](lofter.jpg)
 
 ```js
  利用了一些css3属性和弹性布局搭建的整个页面布局，
@@ -18,7 +18,7 @@
 
 2. 仿百度外卖宣传页
 
-![waimai](../../../../../waimai.jpg)
+![waimai](waimai.jpg)
 
 ```js
 逻辑实现主要用到的插件有 zepto.js  css布局用的sass工具，
@@ -34,7 +34,7 @@
 
 3. 仿嘀嘀打车app
 
-![didi](../../../../../didi.jpg)
+![didi](didi.jpg)
 
 ```js
 前面的宣传页也是用了大量的css3动画实现的，
@@ -50,7 +50,7 @@ ajax请求那里，调用的是百度的地图接口，
 
 4. 飞行的小鸟（pc端）
 
-![flyBird](../../../../../flybird.jpg)
+![flyBird](flybird.jpg)
 
 ```js
 用面向对象的思想把天空，小鸟，陆地，管道分成了一个个模块，各个模块之间进行很好的隔离，
