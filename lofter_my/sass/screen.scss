@@ -1,0 +1,20 @@
+//  设计图 切割的份数
+// 这里使用 20份 目的是为了计算方便仅此而已
+$sizes:20;
+@mixin fontSizeWithScreen($screenSize){
+    @media screen and (width:$screenSize){
+        html{
+            font-size:($screenSize/$sizes);
+        }
+    }
+}
+//  360
+@include fontSizeWithScreen(360px);
+// 375
+@include fontSizeWithScreen(375px);
+//  320
+@include fontSizeWithScreen(320px);
+// 412 
+@include fontSizeWithScreen(412px);
+// 414
+@include fontSizeWithScreen(414px);

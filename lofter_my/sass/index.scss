@@ -1,0 +1,1014 @@
+    //  导入库文件
+    @import 'normalize.min.scss';
+    @import 'swiper.min.scss';
+    //  导入 自己定义的函数
+    @import 'function.scss';
+    // 导入自己的base文件
+    @import 'base.scss';
+    //  导入 分辨屏幕的样式
+    @import 'screen.scss';
+    html,
+    body {
+        height: 100%;
+        font-family: sans-serif;
+    }
+    
+    body {
+        background-color: #f7f7f7;
+    }
+    
+    //  乐乎顶级布局
+    .lofter-layout {
+        height: 100%;
+        //  容器高度
+        >.swiper-container {
+            height: 100%;
+        }
+        //  tab栏设置 分页器
+        >.lofter-layout-tab {
+            position: absolute;
+            background-color: rgba(255, 255, 255, .5);
+            bottom: 0px;
+            width: 100%;
+            //  高度
+            height: (97rem/32);
+            //  分页器 span样式 
+            span {
+                height: 100%;
+                width: 20%;
+                // border: 1px solid #000;
+                border-radius: 0;
+                position: absolute;
+                //  禁止蓝色高亮
+                cursor: none;
+                &::before {
+                    position: absolute;
+                    font-size: (20rem/32);
+                    text-align: center;
+                    width: 100%;
+                    left: 0;
+                    bottom: (5rem/32);
+                    color: #84A0A3;
+                }
+                //  左边两个 
+                &:nth-child(1) {
+                    left: 0px;
+                    background: url('../img/01.app-icons/bb_btn_home_unselect.png') no-repeat center (20rem/32);
+                    background-size: (40rem/32) (40rem/32);
+                    //  使用伪元素来设置内容
+                    &::before {
+                        content: '首页';
+                    }
+                }
+                &:nth-child(2) {
+                    left: 20%;
+                    background: url('../img/01.app-icons/bb_btn_label_unselect.png') no-repeat center (20rem/32);
+                    background-size: (54rem/32) (41rem/32);
+                    //  伪元素 设置内容
+                    &::before {
+                        content: '发现';
+                    }
+                }
+                &:nth-child(3) {
+                    right: 20%;
+                    background: url('../img/01.app-icons/bb_btn_message_select.png') no-repeat center (20rem/32);
+                    background-size: (40rem/32) (40rem/32);
+                    //  伪元素 设置内容
+                    &::before {
+                        content: '消息';
+                    }
+                }
+                &:nth-child(4) {
+                    right: 0;
+                    background: url('../img/01.app-icons/bb_btn_account_select.png') no-repeat center (20rem/32);
+                    background-size: (40rem/32) (40rem/32);
+                    //  伪元素 设置内容
+                    &::before {
+                        content: '我的';
+                    }
+                }
+            }
+        }
+        //  照相机 跟分页器并列
+        .camera {
+            position: absolute;
+            bottom: 0px;
+            z-index: 11;
+            left: 50%;
+            transform: translateX(-50%);
+            height: (97rem/32);
+            width: 20%;
+            background: url('../img/01.app-icons/bb_btn_post_select.png')no-repeat center (18rem/32);
+            background-size: (90rem/32) (60rem/32);
+        }
+    }
+    
+    //  首页
+    .index {
+        // 顶级背景色
+        background-color: #EEEEEE;
+        //  设置上下的 padding
+        padding-top: changeSize(84rem);
+        padding-bottom: changeSize(97rem);
+        //  顶级swiper 分页器的样式
+        .index-pagination {
+            height: changeSize(80rem);
+            width: 100%;
+            display: flex;
+            //  左右居中
+            justify-content: center;
+            align-items: flex-end;
+            // 底部横线
+            border-bottom: changeSize(2rem) solid #ECEDE7;
+            //  背景为白色
+            background-color: white;
+            //  使用定位的方式 设置到顶部
+            position: absolute;
+            top: 0px;
+            span {
+                height: changeSize(84rem);
+                line-height: changeSize(84rem);
+                color: black;
+                width: 30%;
+                border-radius: 0;
+                background-color: transparent;
+                //  去除高亮效果
+                cursor: none;
+                &.swiper-pagination-bullet-active {
+                    border-bottom: changeSize(4rem) solid #9AC327;
+                }
+            }
+        }
+        //  添加好友的a标签
+        .add-friend {
+            position: absolute;
+            height: changeSize(32rem);
+            width: changeSize(41rem);
+            //  通过padding 将他压大
+            padding: 0 changeSize(10rem) changeSize(10rem);
+            box-sizing: content-box;
+            background: url("../img/01.app-icons/dashboard_find_friend.png") no-repeat center/contain;
+            background-origin: content-box;
+            //  位置
+            right: changeSize(33rem);
+            top: changeSize(18rem);
+            //  设置层级
+            z-index: 20;
+        }
+        //  顶级swiper的高度
+        .index-container {
+            height: 100%;
+        }
+    }
+    
+    //  首页 关注区域样式
+    .index-attention-container {
+        height: 100%;
+        .index-attention-slide {
+            height: auto;
+            background-color: white;
+        }
+    }
+    
+    // 首页 关注区域样式
+    .index-attention-slide {
+        // 列表数据 
+        .item {
+            // 顶部区域
+            .top {
+                height: changeSize(120rem);
+                background-color: white;
+                display: flex;
+                align-items: center;
+                padding-left: changeSize(32rem);
+                padding-right: changeSize(36rem);
+                img {
+                    width: changeSize(82rem);
+                    height: changeSize(82rem);
+                    border-radius: 50%;
+                    margin-right: changeSize(32rem);
+                }
+                h3 {
+                    font-size: changeSize(28rem);
+                    display: flex;
+                    justify-content: space-between;
+                    flex: 1;
+                    span {
+                        font-size: changeSize(25rem);
+                        color: #adadad;
+                    }
+                }
+            }
+            // 内容区域
+            .img-box {
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+            // 内容区域
+            .content {
+                padding: 0 changeSize(32rem) changeSize(32rem);
+                font-size: changeSize(30rem);
+                .name {
+                    padding-top: changeSize(34rem);
+                    text-decoration: underline;
+                    font-size: changeSize(30rem);
+                }
+                .info {
+                    margin: changeSize(30rem) 0;
+                    padding-top: changeSize(20rem);
+                    padding-bottom: changeSize(20rem);
+                    padding-left: changeSize(32rem);
+                    border-left: changeSize(1rem) solid #9a9a9a;
+                }
+                .from {
+                    display: flex;
+                    color: #696969;
+                    font-weight: 900;
+                    font-size: changeSize(30rem);
+                    img {
+                        width: changeSize(30rem);
+                        height: changeSize(28rem);
+                        margin-right: changeSize(18rem);
+                    }
+                    span {
+                        color: #9e9e9e;
+                        margin-right: changeSize(14rem);
+                    }
+                }
+                .key-words {
+                    color: #9f9f9f;
+                    padding: changeSize(40rem) 0 changeSize(32rem);
+                    border-bottom: changeSize(1rem) dashed #9f9f9f;
+                    span:nth-child(n+2) {
+                        margin-right: changeSize(30rem);
+                    }
+                }
+                .control {
+                    padding: changeSize(40rem) 0;
+                    img {
+                        width: changeSize(46rem);
+                        height: changeSize(42rem);
+                        margin-right: changeSize(76rem);
+                        &:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                }
+                .hot {
+                    color: #afafaf;
+                }
+            }
+        }
+        // 可能感兴趣的人
+        .interest {
+            background-color: #f6f6f6;
+            h5 {
+                font-size: changeSize(25rem);
+                color: #acacac;
+                padding-top: changeSize(31rem);
+                padding-bottom: changeSize(31rem);
+                padding-left: changeSize(25rem);
+            }
+            //   
+            .interest-container {
+                height: changeSize(535rem);
+                // 布局区域
+                .interest-slide {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    align-items: center;
+                    background-color: white;
+                    width: changeSize(542rem);
+                    .delete {
+                        position: absolute;
+                        top: changeSize(15rem);
+                        right: changeSize(15rem);
+                    }
+                    .icon {
+                        width: changeSize(100rem);
+                        height: changeSize(100rem);
+                        border-radius: 50%;
+                        margin-top: changeSize(30rem);
+                    }
+                    h4 {
+                        margin: changeSize(23rem) 0;
+                        font-weight: 900;
+                        font-size: changeSize(24rem);
+                        color: black;
+                    }
+                    p {
+                        font-size: changeSize(22rem);
+                        color: #c4c4c4;
+                        margin-bottom: changeSize(21rem);
+                    }
+                    .interest-slide-imgs {
+                        display: flex;
+                        img {
+                            width: 33.3333333333%;
+                            height: 100%;
+                            border: changeSize(1rem) solid white;
+                        }
+                    }
+                    //  关注按钮 
+                    input {
+                        width: changeSize(142rem);
+                        height: changeSize(62rem);
+                        border: 1px solid #94bb00;
+                        border-radius: changeSize(62rem);
+                        background-color: transparent;
+                        color: #94bb00;
+                        margin-top: changeSize(30rem);
+                    }
+                }
+            }
+        }
+    }
+    
+    //  首页 订阅区域样式
+    .index-subscribe-container {
+        height: 100%;
+        .index-subscribe-slide {
+            height: auto;
+        }
+    }
+    
+    // 首页 订阅区域样式
+    .index-subscribe-slide {
+        .subscribe-content {
+            margin-top: changeSize(26rem);
+            .title {
+                height: changeSize(71rem);
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                padding-left: changeSize(28rem);
+                border-bottom: changeSize(1rem) solid lightgray;
+                background-color: white;
+                span {
+                    font-size: changeSize(25rem);
+                    color: #828282;
+                }
+            }
+            //  列表区域 
+            .items {
+                background-color: white;
+                .item {
+                    display: flex;
+                    height: changeSize(105rem);
+                    .item-l {
+                        width: changeSize(126rem);
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        img {
+                            width: changeSize(72rem);
+                            height: changeSize(72rem);
+                        }
+                    }
+                    .item-r {
+                        display: flex;
+                        flex: 1;
+                        justify-content: space-between;
+                        padding-right: changeSize(28rem);
+                        align-items: center;
+                        border-bottom: changeSize(1rem)solid lightgray;
+                        .r-l {
+                            h5 {
+                                font-size: changeSize(20rem);
+                                margin-top: changeSize(29rem);
+                            }
+                            p {
+                                font-size: changeSize(20rem);
+                                margin-top: changeSize(23rem);
+                                color: #b3b3b3;
+                            }
+                        }
+                        input {
+                            width: changeSize(84rem);
+                            height: changeSize(49rem);
+                            border-radius: changeSize(49rem);
+                            border: changeSize(1rem) solid#9cb54b;
+                            color: #9cb54b;
+                            font-size: changeSize(22rem);
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+            // 底部区域
+            .footer{
+                height: changeSize(70rem);
+                background-color: white;
+                text-align: center;
+                line-height: changeSize(70rem);
+                margin:changeSize(27rem)0;
+            }
+        }
+    }
+    
+    //  发现区域 
+    .discover {
+        height: 100%;
+        padding-top: changeSize(90rem);
+        padding-bottom: changeSize(97rem);
+        // 顶部区域
+        .header {
+            background-color: white;
+            padding: (20rem/32) (20rem/32) (10rem/32);
+            //  定位
+            position: absolute;
+            top: 0;
+            width: 100%;
+            input {
+                height: (60rem/32);
+                width: 100%;
+                background-color: #eee;
+                border-radius: (10rem/32);
+                padding-left: changeSize(160rem);
+            }
+            a {
+                position: absolute;
+                &.search {
+                    width: changeSize(32rem);
+                    height: changeSize(32rem);
+                    background: url('../img/01.app-icons/explore_search.png') no-repeat center /contain;
+                    left: changeSize(125rem);
+                    top: changeSize(33rem);
+                }
+                &.add {
+                    width: changeSize(42rem);
+                    height: changeSize(35rem);
+                    background: url('../img/01.app-icons/dashboard_find_friend.png') no-repeat center/cover;
+                    top: changeSize(10rem);
+                    right: changeSize(17rem);
+                    box-sizing: content-box;
+                    padding: 10px;
+                    background-origin: content-box;
+                }
+            }
+        }
+        //  设置容器外观
+        .discover-container {
+            height: 100%;
+            .discover-slide {
+                height: auto;
+            }
+        }
+        // 发现区域内部布局
+        .discover-slide {
+            //  banner的布局
+            .banner-container {
+                height: changeSize(258rem);
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            // master的布局
+            .master-container {
+                height: changeSize(705rem);
+                background-color: #eee;
+                padding-top: changeSize(36rem);
+                .master-slider {
+                    width: changeSize(488rem);
+                    height: changeSize(592rem);
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: 0 0 changeSize(10rem) #eee;
+                    h4 {
+                        text-align: center;
+                        margin: changeSize(30rem) 0 changeSize(33rem);
+                    }
+                    .items {
+                        display: flex;
+                        flex-wrap: wrap;
+                        flex: 1;
+                        img {
+                            width: 50%;
+                            height: 50%;
+                            border: 1px solid white;
+                        }
+                    }
+                }
+            }
+            // 推荐区域
+            .commend {
+                background-color: white;
+                overflow: hidden;
+                h4 {
+                    color: #969696;
+                    margin-top: changeSize(33rem);
+                    margin-left: changeSize(31rem);
+                    margin-bottom: changeSize(41rem);
+                }
+                .items {
+                    display: flex;
+                    flex-wrap: wrap;
+                    list-style: none;
+                    li {
+                        width: 33.33333%;
+                        text-align: center;
+                        img {
+                            width: changeSize(176rem);
+                            height: changeSize(176rem);
+                            border-radius: 50%;
+                        }
+                        .name {
+                            margin: changeSize(17rem) 0;
+                            font-size: changeSize(30rem);
+                        }
+                        .info {
+                            margin-bottom: changeSize(51rem);
+                            color: #9a9a9a;
+                            font-size: changeSize(26rem);
+                        }
+                    }
+                }
+            }
+            //  更多达人
+            .more {
+                height: changeSize(109rem);
+                text-align: center;
+                line-height: changeSize(109rem);
+                border-top: changeSize(1rem) solid #dcdcdc;
+                color: #a1c30f;
+                background-color: white;
+            }
+            //  文章推荐
+            .novel {
+                margin-top: changeSize(40rem);
+                background-color: white;
+                h4 {
+                    color: #979797;
+                    padding-top: changeSize(32rem);
+                    padding-bottom: changeSize(32rem);
+                    padding-left: changeSize(40rem);
+                }
+                .items {
+                    display: flex;
+                    flex-wrap: wrap;
+                    img {
+                        width: 33.3333%;
+                        height: 33.33333%;
+                        border: changeSize(1rem) solid white;
+                    }
+                }
+            }
+        }
+        // 
+    }
+    
+    //  信息区域
+    .message {
+        // 顶级背景色
+        background-color: white;
+        //  设置上下的 padding
+        padding-top: changeSize(80rem);
+        padding-bottom: changeSize(97rem);
+        // message 顶部分页器 
+        .message-pagination {
+            //  弹性布局 
+            display: flex;
+            height: changeSize(80rem);
+            background-color: white;
+            width: 100%;
+            // 副轴对齐
+            align-items: flex-end;
+            // 定位 设置上去
+            position: absolute;
+            top: 0;
+            border-bottom: changeSize(1rem) solid #ececec;
+            span {
+                background-color: white;
+                border-radius: 0;
+                color: black;
+                flex: 1;
+                height: changeSize(76rem);
+                line-height: changeSize(76rem);
+                text-align: center;
+                cursor: none;
+                // 高亮状态
+                &.swiper-pagination-bullet-active {
+                    border-bottom: changeSize(4rem) solid #96B81C;
+                }
+            }
+        }
+        // 内容区域
+        .message-container {
+            height: 100%;
+        }
+    }
+    
+    // 信息区域 - 动态部分 设置 swiper的样式
+    .message-trend {
+        .message-trend-container {
+            height: 100%;
+            .message-trend-slide {
+                height: auto;
+            }
+        }
+    }
+    
+    // 信息区域-动态部分 样式设置
+    .message-trend-slide {
+        .section {
+            display: flex;
+            .section-l {
+                width: changeSize(106rem);
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+                padding-top: changeSize(22rem);
+                img {
+                    width: changeSize(73rem);
+                    height: changeSize(73rem);
+                    border-radius: 50%;
+                }
+            }
+            .section-r {
+                border-bottom: changeSize(1rem) solid #e5e5e5;
+                flex: 1;
+                h3 {
+                    font-size: changeSize(23rem);
+                    margin-top: changeSize(25rem);
+                    span {
+                        color: #afafaf;
+                    }
+                }
+                p {
+                    font-size: changeSize(23rem);
+                    color: #d5d5d5;
+                    margin-top: changeSize(21rem);
+                    margin-bottom: changeSize(18rem);
+                }
+                .section-r-content {
+                    display: flex;
+                    flex-wrap: wrap;
+                    .item {
+                        width: changeSize(122rem);
+                        height: changeSize(122rem);
+                        background: #ededed;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        margin-bottom: changeSize(17rem);
+                        margin-right: changeSize(6rem);
+                        font-size: changeSize(30rem);
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    // 信息区域 - 新闻部分 设置 swiper的样式
+    .message-news {
+        .message-news-container {
+            height: 100%;
+            .message-news-slide {
+                // height: auto;
+            }
+        }
+    }
+    
+    // 信息区域 - 新闻部分 样式设置
+    .message-news-slide {
+        display: flex;
+        flex-direction: column;
+        //  顶部区域
+        .top {
+            .section {
+                display: flex;
+                height: changeSize(122rem);
+                .section-l {
+                    width: changeSize(129rem);
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: changeSize(54rem);
+                        height: changeSize(54rem);
+                    }
+                }
+                .section-r {
+                    flex: 1;
+                    height: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: changeSize(1rem) solid #eee;
+                    padding-right: changeSize(28rem);
+                    h5 {
+                        font-size: changeSize(27rem);
+                        padding-left: changeSize(6rem);
+                    }
+                    img {
+                        width: changeSize(16rem);
+                        height: changeSize(25rem);
+                    }
+                }
+            }
+        }
+        // 底部区域
+        .bottom {
+            background-color: #f2f5f4;
+            overflow: hidden;
+            padding: 0 changeSize(27rem);
+            flex: 1;
+            .title {
+                width: 100%;
+                height: changeSize(1rem);
+                background-color: #e9eceb;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: changeSize(43rem) 0;
+                span {
+                    background-color: #f2f5f4;
+                    padding: 0 changeSize(20rem);
+                }
+            }
+            .info {
+                width: 100%;
+                height: changeSize(160rem);
+                background-color: white;
+                padding: changeSize(17rem);
+                display: flex;
+                align-items: center;
+                border-radius: changeSize(10rem);
+                img {
+                    width: changeSize(188rem);
+                    height: changeSize(123rem);
+                    border-radius: changeSize(10rem);
+                }
+                h5 {
+                    padding-left: changeSize(30rem);
+                    font-size: changeSize(25rem);
+                }
+            }
+            .more {
+                width: 100%;
+                height: changeSize(90rem);
+                text-align: center;
+                line-height: changeSize(90rem);
+                color: #9ab815;
+                margin-top: changeSize(27rem);
+                background-color: white;
+                border-radius: changeSize(10rem);
+            }
+        }
+    }
+    
+    // 信息区域 - 聊天部分 设置 swiper的样式
+    .message-chat {
+        .message-chat-container {
+            height: 100%;
+            background-color: #f2f5f4;
+            .message-chat-slide {
+                height: auto;
+            }
+        }
+    }
+    
+    // 信息区域-聊天部分 样式设置
+    .message-chat-slide {
+        background-color: white;
+        .section {
+            display: flex;
+            height: changeSize(123rem);
+            .section-l {
+                width: changeSize(139rem);
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: changeSize(90rem);
+                    height: changeSize(90rem);
+                    border-radius: 50%;
+                }
+            }
+            .section-r {
+                flex: 1;
+                padding-right: changeSize(21rem);
+                h4 {
+                    font-size: changeSize(24rem);
+                    margin-top: changeSize(33rem);
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    span {
+                        color: #c7c7c7;
+                    }
+                }
+                p {
+                    font-size: changeSize(24rem);
+                    margin-top: changeSize(17rem);
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    height: changeSize(24rem);
+                    width: 100%;
+                    color: #999;
+                }
+            }
+        }
+    }
+    
+    // 我的 区域
+    .self {
+        // 设置swiper的样式
+        .self-container {
+            height: 100%;
+            // padding-bottom: changeSize(97rem);
+            margin: 0;
+            background: url('../img/04.normal/self-bg.jpg')no-repeat top center /cover;
+        }
+    }
+    
+    // 我的区域 内部布局.
+    .self-slide {
+        display: flex;
+        flex-direction: column;
+        .self-header {
+            height: changeSize(240rem);
+            display: flex;
+            position: relative;
+            background-color: rgba(255, 255, 255, .5);
+            // // 伪元素 制作 背景图片
+            // &::before {
+            //     content: '';
+            //     position: absolute;
+            //     width: 100%;
+            //     height: 100%;
+            //     background: url("../img/02.head-icons/lofter_header_icon_ (1000).jpg") no-repeat center /cover;
+            //     z-index: -1;
+            // }
+            .header-l {
+                width: changeSize(195rem);
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img {
+                    width: changeSize(145rem);
+                    height: changeSize(145rem);
+                    border-radius: 50%;
+                }
+            }
+            .header-r {
+                flex: 1;
+                height: 100%;
+                h3 {
+                    margin-top: changeSize(66rem);
+                    font-size: changeSize(29rem);
+                }
+                p {
+                    margin: changeSize(20rem) 0;
+                    color: #919598;
+                    font-size: changeSize(19rem);
+                }
+                .habbit-box {
+                    padding-right: changeSize(157rem);
+                    display: flex;
+                    a {
+                        font-size: changeSize(25rem);
+                        color: black;
+                        flex: 1;
+                    }
+                }
+            }
+            .header-arrow {
+                width: changeSize(21rem);
+                height: changeSize(35rem);
+                align-self: center;
+            }
+        }
+        // 礼物区域
+        .self-gift {
+            height: changeSize(160rem);
+            display: flex;
+            background-color: white;
+            // 底部边框
+            border-bottom: changeSize(1rem) solid #E5E5E5;
+            >div {
+                height: 100%;
+                flex: 1
+            }
+            // 左边区域 
+            .gift-l {
+                border-right: changeSize(1px) solid #DEDEDE;
+                display: flex;
+                .l-img {
+                    width: changeSize(135rem);
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: changeSize(80rem);
+                        height: changeSize(80rem);
+                    }
+                }
+                .l-info {
+                    h4 {
+                        margin-top: changeSize(50rem);
+                        font-size: changeSize(28rem);
+                        position: relative;
+                        &::before {
+                            content: '上新';
+                            position: absolute;
+                            background-color: #CB3234;
+                            width: changeSize(54rem);
+                            height: changeSize(26rem);
+                            border-radius: changeSize(26rem);
+                            font-size: changeSize(15rem);
+                            color: white;
+                            text-align: center;
+                            line-height: changeSize(26rem);
+                            right: changeSize(-4rem);
+                            transform: translateX(100%);
+                            top: changeSize(2rem);
+                        }
+                    }
+                    p {
+                        font-size: changeSize(22rem);
+                        margin-top: changeSize(20rem);
+                        color: #A1BF43;
+                        padding-left: changeSize(35rem);
+                        background: url("../img/01.app-icons/welfare_new_count_icon.png") no-repeat left/changeSize(22rem) changeSize(22rem);
+                    }
+                }
+            }
+            // 右边区域
+            .gift-r {
+                display: flex;
+                .r-img {
+                    width: changeSize(135rem);
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    img {
+                        width: changeSize(80rem);
+                        height: changeSize(80rem);
+                    }
+                }
+                .r-info {
+                    h4 {
+                        margin-top: changeSize(50rem);
+                        font-size: changeSize(28rem);
+                    }
+                    p {
+                        font-size: changeSize(19rem);
+                        margin-top: changeSize(20rem);
+                        color: #8D8D8D;
+                    }
+                }
+            }
+        }
+        // 设置区域
+        .self-setting {
+            background-color: white;
+            flex: 1;
+            li {
+                height: changeSize(90rem);
+                display: flex;
+                .setting-l {
+                    height: 100%;
+                    width: changeSize(92rem);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: changeSize(40rem);
+                        height: changeSize(40rem);
+                    }
+                }
+                .setting-r {
+                    border-bottom: 1px solid #eee;
+                    height: 100%;
+                    flex: 1;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-right: changeSize(27rem);
+                    p {
+                        font-size: changeSize(30rem);
+                    }
+                    img {
+                        width: changeSize(18rem);
+                        height: changeSize(25rem);
+                    }
+                }
+            }
+        }
+    }
