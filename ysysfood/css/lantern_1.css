@@ -1,0 +1,31 @@
+﻿.wp-lantern_content img {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none
+}
+.wp-lantern_content a:hover{text-decoration: none;}
+.wp-lantern_content .botton-scroll {
+	Z-INDEX: 0; BORDER-BOTTOM: #999 0px dotted; BORDER-LEFT: #999 0px dotted; overflow: hidden;MARGIN: 0px 0px;  FLOAT: left; BORDER-TOP: #999 0px dotted; BORDER-RIGHT: #999 0px dotted
+}
+
+
+.wp-lantern_content .wp_direction_left .featureBox,.wp-lantern_content .wp_direction_right .featureBox {
+	FLOAT: left;
+}
+.wp-lantern_content .wp_direction_left .featureUL,.wp-lantern_content .wp_direction_right .featureUL {
+	width:1000px;
+}
+.wp-lantern_content  .wp_direction_up a.imgtitle,.wp-lantern_content  .wp_direction_down a.imgtitle {
+	text-align: left;
+}
+.wp-lantern_content  .botton-scroll.wp_optype_3 a.imgtitle{
+	margin:0 0;padding:0 0 0 0;
+}
+.wp-lantern_content  a.imgtitle {
+	margin:5px 0;
+	display:block;
+	padding:0 0 5px;
+	font-size:12px;
+	text-align: center;
+}
+.wp-lantern_content  div.imgtitle {
+	margin-top:5px;
+}
