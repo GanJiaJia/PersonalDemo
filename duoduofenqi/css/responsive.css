@@ -1,0 +1,51 @@
+﻿@media( min-width: 992px){
+	.mobile-home-container{
+		display: none;
+	}
+	.mobile-footer{
+		display: none;
+	}
+}
+@media( max-width: 991px){
+	body{
+		overflow: scroll !important;
+	}
+	section.about-banner{
+		padding-top: 0;
+	}
+	.about-big-banner img{
+		margin: 0;
+	}
+	.marquee-container,
+	.homepage-container,
+	footer .pc-footer,
+	#fp-nav,
+	.navbar.navbar-default{
+		display: none;
+	}
+	footer{
+		background: #fff !important;
+		padding: 0 !important;
+		position: fixed;
+		bottom: 0;
+	}
+	.mobile-home-container,
+	.about-main,
+	section.more-info,
+	.help.container{
+		margin-bottom: 90px;
+		margin-top: 0;
+		padding: 0;
+	}
+	section.more-info{
+		padding-left: 0;
+	}
+
+}
+
+
+
+@media( min-width: 768px) and (max-width: 1024px){
+
+}
+

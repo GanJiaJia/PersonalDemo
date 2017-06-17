@@ -1,0 +1,30 @@
+﻿.navbar-fixed-top{
+	left:auto;
+	top:auto;
+	right: auto;
+}
+.col-md-offset-2{
+	margin-left: 16.66666667%;
+}
+.navbar.navbar-default.navbar-fixed-top{
+	display: inline-block;
+	width: 100%;
+}
+.logo{
+	width: 180px;
+	height: 80px;
+}
+footer div.footer-links,
+footer div.contact-channel,
+footer div.footer-wechat{
+	display: inline-block;
+}
+.container{
+	width: 1200px;
+}
+.col-lg-3{
+	width: 25%;
+}
+.col-sm-12{
+	width: 100%;
+}
