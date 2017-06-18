@@ -79,8 +79,8 @@ ajax请求那里，调用的是百度的地图接口，
 使用artTemplate（引擎模板）对返回的数据进行渲染，
 生成相应的商品列表并加载到页面上；
 
-![网站地址](http://www.getbcity.com)
 ```
+[网站地址](http://www.getbcity.com)
 
 
 
@@ -98,9 +98,8 @@ ajax请求那里，调用的是百度的地图接口，
  使用fullPage插件实现移动端的各种滑动特效；
  使用owl.carousel插件实现图片延迟加载的功能，减少服务器的压力；
 
- ![网站地址](http://vip.duoduofenqi.com)
 ```
-
+[网站地址](http://vip.duoduofenqi.com)
 
 
 7. 御膳养生食品（移动端+PC端）
@@ -116,5 +115,5 @@ ajax请求那里，调用的是百度的地图接口，
 在一定程度赏降低了服务，器压力；跟踪产品的用户反馈，
 提出改善方案，不断优化用户体验；
 
-![网站地址](http://www.ysysfood.com);
 ```
+[网站地址](http://www.ysysfood.com);
