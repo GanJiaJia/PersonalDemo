@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>电影展示</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/wap.css">
+</head>
+
+<body ng-app="moviecat">
+    <!-- 顶部导航栏开始 -->
+    <div class="top">
+        <div class="header">
+            <a href="#/home_page"><img src="assets/img/aiqiyi.png" alt=""></a>
+            <div class="search"  ng-controller="searchCtrl">
+                <form ng-submit="query()" >
+                    <input class="my-input" type="text" placeholder="电影搜索" ng-model="keyWords">
+                    <button>搜索</button>
+                </form>
+                
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <!--li中添加 active 类样式，显示焦点状态。-->
+                <li my-Active><a href="#/home">首页</a></li>
+                <li class="active" my-Active><a href="#/in_theaters">正在热映</a></li>
+                <li my-Active><a href="#/coming_soon">即将上映</a></li>
+                <li my-Active><a href="#/top250">Top250</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- 顶部导航栏结束 -->
+    <div class="container" ng-view>
+
+
+
+
+
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p>无聊用Angular做的Demo.. @_@</p>
+        </div>
+    </footer>
+    <script src="assets/js/prefixfree.min.js"></script>
+    <script src="./assets/js/angular.min.js"></script>
+    <script src="./assets/js/angular-route.min.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
