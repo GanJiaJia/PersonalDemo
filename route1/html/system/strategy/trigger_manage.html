@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>触发策略管理列表</title>
+    <link rel="stylesheet" href="../../../public/css/public.css">
+    <link rel="stylesheet" href="../../../css/index/base.css">
+    <link rel="stylesheet" href="../../../css/index/strategy/trigger_mannage.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+    <div class="contain clearfix">
+        <div class="list">
+            <h3 class="tits">
+                <span>
+					<i class="icon-list-alt"></i>
+					触发策略管理列表
+				</span>
+                <a href="#" id="equipment"><i class="icon-plus icon-large"></i> <em>添加触发策略</em></a>
+            </h3>
+
+            <div class="alist">
+                <table class="account_table">
+                    <thead>
+                        <th>触发策略名称</th>
+                        <th>触发事件</th>
+                        <th>优先级</th>
+                        <th>创建时间</th>
+                        <th>修改时间</th>
+                        <th>修改人员</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </thead>
+                    <tbody class="accontlist">
+                        <tr>
+                            <td>策略一</td>
+                            <td class="xh">栈顶应用高屏链接WIFI</td>
+                            <td class="xh">1</td>
+                            <td class="xh">2017-6-1</td>
+                            <td>2017-6-2</td>
+                            <td>管理员1</td>
+                            <td><a href="#" class="toggle toggle--on"></a></td>
+                            <td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                <input type="button" value="删除">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>优质用户优化策略</td>
+                            <td class="xh">亮屏链接WIFI</td>
+                            <td class="xh">8</td>
+                            <td class="xh">2017-6-1</td>
+                            <td>2017-6-2</td>
+                            <td>管理员1</td>
+                            <td><a href="#" class="toggle toggle--on"></a></td>
+                            <td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                <input type="button" value="删除">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>垃圾渠道暴力策略</td>
+                            <td class="xh">栈顶应用链接WIFI</td>
+                            <td class="xh">4</td>
+                            <td class="xh">2017-6-1</td>
+                            <td>2017-6-2</td>
+                            <td>管理员1</td>
+                            <td><a href="#" class="toggle toggle--on"></a></td>
+                            <td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                <input type="button" value="删除">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="control-page">
+                    <button type="button">上一页</button>
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>...</span>
+                    <button type="button">下一页</button>
+                </div>
+            </div>
+            <!-- 触发策略管理创建或修改-->
+            <div class="add_account" id="add_equipments">
+                <i class="close icon-remove"></i>
+                <h4>触发策略管理创建或修改</h4>
+                <div class="act app-select">
+                    <span>策略名称:</span>
+                    <input type="text" class="equipment_name">
+
+
+                    <span>应用选择:</span>
+                    <select multiple="multiple">
+                        <option selected>未选应用</option>
+                        <option>流量王</option>
+                        <option>泡泡龙</option>
+                     </select>
+
+                    <select size="20" multiple="multiple">
+                        <option selected>已选应用</option>
+                        <option>鹰眼无界面</option>
+                     </select>
+
+
+
+                    <!--<fieldset>
+                            <legend>未选应用</legend>
+                           
+                        </fieldset>-->
+
+
+                    <!--<i class="icon-asterisk"></i>
+                    <div class="addaccount_tips ln"></div>-->
+                </div>
+
+                <div class="act">
+                    <span>受众群体</span>
+                    <select name="" class="user-group">
+                        <option value="">全部</option>
+                        <option value="">中低端用户</option>
+                        <option value="">高端用户</option>
+                        <option value="">低端用户</option>
+                    </select>
+                </div>
+
+
+
+                <div class="act stack-top-app">
+                    <span>栈顶应用:</span>
+                    <input type="checkbox" checked>
+                    <span>判断周期</span>
+                    <select name="" multiple="multiple">
+                        <option value="">10</option>
+                        <option value="">9</option>
+                        <option value="">8</option>
+                        <option value="">7</option>
+                   </select>
+                    <em> 秒</em>
+                </div>
+
+                <div class="act app-switch">
+
+                    <input type="checkbox" checked>
+                    <em>应用切换</em>
+
+                    <strong>广告位</strong>
+                    <select name="">
+                        <option value="">伪应用内插屏</option>
+                        <option value="">伪应用内横幅</option>
+                        <option value="">伪应用内信息流</option>
+                        <option value="">亮屏插屏</option>
+                        <option value="">网络切换开屏</option>
+                   </select>
+                    <strong>最小间隔</strong>
+
+                    <select name="">
+                        <option value="">30</option>
+                        <option value="">20</option>
+                        <option value="">10</option>
+                        <option value="">5</option>
+                        <option value="">1</option>
+                   </select>
+                    <em>分</em>
+                </div>
+
+                <div class="act app-switch">
+
+                    <input type="checkbox" checked>
+                    <em>应用使用</em>
+
+                    <strong>广告位</strong>
+                    <select name="">
+                        <option value="">伪应用内插屏</option>
+                        <option value="">伪应用内横幅</option>
+                        <option value="">伪应用内信息流</option>
+                        <option value="">亮屏插屏</option>
+                        <option value="">网络切换开屏</option>
+                   </select>
+                    <strong>最小间隔</strong>
+
+                    <select name="">
+                        <option value="">30</option>
+                        <option value="">20</option>
+                        <option value="">10</option>
+                        <option value="">5</option>
+                        <option value="">1</option>
+                   </select>
+                    <em>秒</em>
+                </div>
+
+                <!--白名单-->
+                <div class="act write-list">
+                    <span>白名单:</span>
+
+                    <select multiple="multiple">
+                        <option selected>未选应用</option>
+                        <option>UC流量器</option>
+                        <option>泡泡龙</option>
+                     </select>
+
+                    <select size="20" multiple="multiple">
+                        <option selected>已选应用</option>
+                        <option>QQ浏览器</option>
+                     </select>
+                </div>
+                <!--亮屏-->
+                <div class="act app-switch light-screen">
+                    <span>亮屏:</span>
+                    <input type="checkbox" checked>
+
+
+                    <strong>广告位</strong>
+                    <select name="">
+                        <option value="">伪应用内插屏</option>
+                        <option value="">伪应用内横幅</option>
+                        <option value="">伪应用内信息流</option>
+                        <option value="">亮屏插屏</option>
+                        <option value="">网络切换开屏</option>
+                   </select>
+                    <strong>触发概率</strong>
+
+                    <select name="">
+                        <option value="">30</option>
+                        <option value="">20</option>
+                        <option value="">10</option>
+                        <option value="">5</option>
+                        <option value="">1</option>
+                   </select>
+                    <em>%</em>
+
+
+                    <strong>最小间隔</strong>
+
+                    <select name="">
+                        <option value="">30</option>
+                        <option value="">20</option>
+                        <option value="">10</option>
+                        <option value="">5</option>
+                        <option value="">1</option>
+                   </select>
+                    <em>分</em>
+                </div>
+                <!--连接wifi-->
+                <div class="act app-switch concat-wifi ">
+                    <span>连接WIFI:</span>
+                    <input type="checkbox" checked>
+
+
+                    <strong>广告位</strong>
+                    <select name="">
+                        <option value="">伪应用内插屏</option>
+                        <option value="">伪应用内横幅</option>
+                        <option value="">伪应用内信息流</option>
+                        <option value="">亮屏插屏</option>
+                        <option value="">网络切换开屏</option>
+                   </select>
+                    <strong>触发概率</strong>
+
+                    <select name="">
+                        <option value="">30</option>
+                        <option value="">20</option>
+                        <option value="">10</option>
+                        <option value="">5</option>
+                        <option value="">1</option>
+                   </select>
+                    <em>%</em>
+
+
+                    <strong>最小间隔</strong>
+
+                    <select name="">
+                        <option value="">30</option>
+                        <option value="">20</option>
+                        <option value="">10</option>
+                        <option value="">5</option>
+                        <option value="">1</option>
+                   </select>
+                    <em>分</em>
+                </div>
+
+                <!--定时闹钟-->
+                <div class="act">
+                    <span>定时闹钟:</span>
+                    <input type="checkbox" checked>
+                </div>
+                <div class="act everyday-req">
+                    <em> 每日请求数范围: </em>
+                    <input type="text"> —— <input type="text">
+
+
+                    <strong> 广告请求间隔范围: </strong>
+                    <input type="text"> —— <input type="text">
+                </div>
+
+                <div class="act everyday-req time-dis">
+                    <em> 时段分布:</em>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                                <th>11</th>
+                                <th>12</th>
+                                <th>13</th>
+                                <th>14</th>
+                                <th>15</th>
+                                <th>16</th>
+                                <th>17</th>
+                                <th>18</th>
+                                <th>19</th>
+                                <th>20</th>
+                                <th>21</th>
+                                <th>22</th>
+                                <th>23</th>
+                                <th>24</th>
+                                <th>25</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td href="#"> 1 </td>
+                                <td href="#"> 0 </td>
+                                <td href="#"> 0 </td>
+                                <td href="#"> 0 </td>
+                                <td href="#"> 0 </td>
+                                <td href="#"> 0 </td>
+                                <td href="#"> 1 </td>
+                                <td href="#"> 2 </td>
+                                <td href="#"> 3 </td>
+                                <td href="#"> 8 </td>
+                                <td href="#"> 6 </td>
+                                <td href="#"> 6 </td>
+                                <td href="#"> 5 </td>
+                                <td href="#"> 7 </td>
+                                <td href="#"> 8 </td>
+                                <td href="#"> 3 </td>
+                                <td href="#"> 2 </td>
+                                <td href="#"> 6 </td>
+                                <td href="#"> 7 </td>
+                                <td href="#"> 7 </td>
+                                <td href="#"> 8 </td>
+                                <td href="#"> 5 </td>
+                                <td href="#"> 3 </td>
+                                <td href="#"> 1 </td>
+                                <td href="#"> 0 </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="act">
+                    <span>版本更新</span>
+                    <input type="checkbox" checked>
+
+                    <strong>版本</strong>
+                    <input type="text" placeholder="输入框">
+                    <button type="button">上传</button>
+                </div>
+
+                <div class="act">
+                    <span>策略拉取间隔</span>
+                    <select name="">
+                        <option value="">30</option>
+                        <option value="">20</option>
+                        <option value="">10</option>
+                        <option value="">5</option>
+                        <option value="">1</option>
+                    </select>
+                    <strong>分</strong>
+                </div>
+
+                <div class="act priority">
+                    <span>优先级</span>
+                    <select name="">
+                         <option value="">  1 </option>
+                        <option value="">  2 </option>
+                        <option value="">  3 </option>
+                        <option value="">  4 </option>
+                        <option value="">  5 </option>
+                        <option value="">  6 </option>
+                        <option value="">  7 </option>
+                        <option value="">  8 </option>
+                        <option value="">  9 </option>
+                        <option value="">  10 </option>
+                    </select>
+                     <em>数据越小优先级越高</em>
+                </div>
+               
+                <div class="btn">
+                    <span class="add_ok" id="add_equipment_btn"><i class="icon-ok"></i></span><span class="add_cancle"><i class="icon-remove"></i></span>
+                </div>
+            </div>
+            <!-- 修改触发策略 -->
+        </div>
+    </div>
+    <div class="list_mask"></div>
+    <div class="post_tips"></div>
+</body>
+<script src="../../../public/js/jquery-1.10.2.min.js"></script>
+<script src="../../../js/index/equipment-list.js"></script>
+<script src="../../../public/js/public.js"></script>
+
+<script>
+</script>
+
+</html>

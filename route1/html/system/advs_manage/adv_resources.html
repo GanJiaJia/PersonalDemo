@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>广告平台资源配置</title>
+	<link rel="stylesheet" href="../../../public/css/public.css">
+	<link rel="stylesheet" href="../../../css/index/base.css">
+	<!--<link rel="stylesheet" href="../../../css/index/advs_manage/advs_resources.css">-->
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="../../../public/css/jquery-ui.min.css">
+	<style>
+		.contain .alist h3 {
+
+			margin-top: 30px;
+		}
+
+		.last-data-size em{
+
+			float: left;
+			margin-right: 13px;
+		}
+
+		.last-data-size a{
+
+			font-size: 25px;
+		}
+		.add_account h5{
+			padding: 20px 20px 10px 15px;
+			font-size: 15px;
+			height: 40px;
+			line-height: 40px;
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 10px;
+			
+		}
+	</style>
+</head>
+
+<body>
+	<div class="contain clearfix">
+		<div class="list">
+
+			<!--<div class="search">
+		
+				
+			</div>-->
+			<div class="alist">
+				<table class="account_table table-data ">
+					<thead>
+						<th>平台名称</th>
+						<th>广告来源</th>
+						<th>状态</th>
+						<th>权重</th>
+						<th>单用户每日最高请求</th>
+						<th>单用户每日最高曝光</th>
+						<th>单用户每日最高点击数</th>
+					</thead>
+					<tbody class="accontlist">
+						<tr>
+							<td>飞扬</td>
+							<td>光点通</td>
+							<td><a href="#" class="toggle toggle--on"></a></td>
+							<td>5</td>
+							<td>100</td>
+							<td>80</td>
+							<td>8</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3 class="tits">
+					<span>
+						<i class="icon-list-alt"></i>
+						上游广告位资源分配
+					</span>
+					<a href="#" id="equipment"><i class="icon-plus icon-large"></i> <em>添加应用和广告位</em></a>
+
+				</h3>
+			</div>
+
+			<div class="alist">
+
+				<table class="account_table table-data">
+					<thead>
+						<th>应用</th>
+						<th></th>
+						<th>横幅</th>
+						<th>插屏</th>
+						<th>开屏</th>
+						<th>信息流</th>
+						<th>状态</th>
+
+					</thead>
+					<tbody class="accontlist">
+
+						<!--一套应用 包括id key 名称-->
+						<tr style="background:#efe">
+							<td>ID</td>
+							<td>5852525</td>
+							<td>2343242</td>
+							<td>2343242</td>
+							<td></td>
+							<td>2342342</td>
+							<td><a href="#" class="toggle toggle--on"></a></td>
+						</tr>
+
+						<tr>
+							<td>KEY</td>
+							<td>a258e52c5585f55a88bd11</td>
+							<td>2343242</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+						<tr>
+							<td>名称</td>
+							<td>第一高尔夫</td>
+							<td></td>
+							<td></td>
+
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+
+						<!--一套应用 包括id key 名称-->
+						<tr style="background:#efe">
+							<td>ID</td>
+							<td>5852525</td>
+							<td>2343242</td>
+							<td>2343242</td>
+							<td></td>
+							<td>2342342</td>
+							<td><a href="#" class="toggle toggle--on"></a></td>
+						</tr>
+
+						<tr>
+							<td>KEY</td>
+							<td>a258e52c5585f55a88bd11</td>
+							<td>2343242</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+						<tr class="last-tr-data">
+							<td>名称</td>
+							<td>早行</td>
+							<td></td>
+							<td></td>
+
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+
+						<!--一套应用 包括id key 名称-->
+						<tr style="background:#efe">
+							<td>ID</td>
+							<td>5852525</td>
+							<td>2343242</td>
+							<td>2343242</td>
+							<td></td>
+							<td>2342342</td>
+							<td><a href="#" class="toggle toggle--on"></a></td>
+						</tr>
+
+						<tr>
+							<td>KEY</td>
+							<td>a258e52c5585f55a88bd11</td>
+							<td>2343242</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+						<tr class="last-tr-data">
+							<td>名称</td>
+							<td>早行</td>
+							<td></td>
+							<td></td>
+
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+
+
+
+
+
+					</tbody>
+				</table>
+
+			</div>
+
+			<!--添加应用和广告位-->
+
+			<div class="add_account" id="add_equipments" style="width: 900px;">
+				<i class="close icon-remove"></i>
+				<h4>添加应用和广告位</h4>
+				<div class="act">
+					<span>应用ID</span>
+
+					<input type="text" placeholder="202084240505">
+					<!--<i class="icon-asterisk"></i>
+					<div class="addaccount_tips ln"></div>-->
+
+					<span>应用KEY</span>
+					<input type="text" class="equipment_url" placeholder="23432dede3dfdsfasedsf">
+				</div>
+
+				<div class="act">
+					<span>应用名称</span>
+					<input type="text" placeholder="第一高尔夫" class="equipment_url">
+
+					<span>应用包名</span>
+					<input type="text" class="equipment_url">
+				</div>
+
+
+				<h5>广告位</h5>
+
+				<div class="act">
+
+					<span>广告类型</span>
+					<select>
+							<option value="">横幅</option>
+							<option value="">插屏</option>
+							<option value="">开屏</option>
+							<option value="">信息流</option>
+						</select>
+
+				</div>
+
+				<div class="act">
+
+					<span>ID</span>
+					<input type="text" value="23423432">
+
+					<span>名称</span>
+					<input type="text" value="第一高尔夫">
+
+
+				</div>
+
+
+				<div class="act last-data-size">
+					
+					<span>尺寸</span>
+					<input type="text" style="width:50px">  <em>X</em>  <input type="text" style="width:50px"> 
+					
+					<a> + </a>
+				</div>
+				<div class="btn">
+					<span class="add_ok" id="add_equipment_btn"><i class="icon-ok"></i></span><span class="add_cancle"><i class="icon-remove"></i></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="list_mask"></div>
+	<div class="post_tips"></div>
+</body>
+<script src="../../../public/js/jquery-1.10.2.min.js"></script>
+<script src="../../../js/index/equipment-list.js"></script>
+<script src="../../../public/js/public.js"></script>
+<script src="../../../public/js/jquery-ui.min.js"></script>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>全局配置</title>
+	<link rel="stylesheet" href="../../../public/css/public.css">
+	<link rel="stylesheet" href="../../../css/index/base.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css"/>
+
+</head>
+<body>
+	<div class="contain clearfix">
+		<div class="list">
+			<h3 class="tits">
+				<span>
+					<i class="icon-list-alt"></i>
+					全局配置
+				</span>
+				<a href= "#" id="equipment" ><i class="icon-plus icon-large"></i> <em>添加</em></a>
+			</h3>
+		
+			<div class="alist">
+				<table class="account_table">
+					<thead>
+						<th>配置名称</th>
+						<th>键</th>
+						<th>值</th>
+						<th>编辑</th>
+				   </thead>
+					<tbody class="accontlist">
+						<tr>
+							<td>设备信息上报周期</td>
+							<td class="xh">DeviceApicycle</td>
+							<td class="xh">34353</td>
+							<td class="xh"><button>编辑</button> <button>删除</button></td>
+						</tr>
+
+                     
+                       
+						
+                        	
+					</tbody>
+				</table>
+			</div>
+			<!-- 添加应用 -->
+			<div class="add_account" id="add_equipments">
+				<i class="close icon-remove"></i>
+				<h4>添加</h4>
+				<div class="act">
+					<span>配置名称:</span>
+					<input type="text" class="equipment_name" >
+					<!--<i class="icon-asterisk"></i>
+					<div class="addaccount_tips ln"></div>-->
+				</div>
+				<div class="act">
+					<span>键:</span>
+					<input type="text" class="equipment_url">
+				</div>
+				<div class="act">
+					<span>值:</span>
+					<input type="text"  class="equipment_lurl" >
+				</div>
+				<div class="btn">
+					<span class="add_ok" id="add_equipment_btn"><i class="icon-ok"></i></span><span class="add_cancle"><i class="icon-remove"></i></span>
+				</div>		
+			</div>
+			<!-- 修改设备信息 -->
+			<div class="add_account" id="edit_equipment">
+				<i class="close icon-remove"></i>
+				<h4>添加配置参数</h4>
+				<div class="act">
+					<span>参数名称:</span>
+					<input type="text" class="edit_equipment_name">
+					<i class="icon-asterisk"></i>
+					<div class="addaccount_tips ln"></div>
+				</div>
+				<div class="act">
+					<span>键:</span>
+					<input type="text" class="edit_equipment_url" placeholder="请输入工具链资料地址">
+				</div>
+				<div class="act">
+					<span>值:</span>
+					<input type="text" disabled="disabled" class="edit_equipment_lurl" value="无">
+				</div>
+				<div class="btn">
+					<span class="add_ok" id="edit_equipment_btn"><i class="icon-ok"></i></span><span class="add_cancle"><i class="icon-remove"></i></span>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="list_mask"></div>
+	<div class="post_tips"></div>
+</body>
+<script src="../../../public/js/jquery-1.10.2.min.js"></script>
+<script src="../../../js/index/equipment-list.js"></script>
+<script src="../../../public/js/public.js"></script>
+
+<script>
+
+</script>
+</html>

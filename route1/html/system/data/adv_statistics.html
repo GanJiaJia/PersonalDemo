@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>广告位统计</title>
+	<link rel="stylesheet" href="../../../public/css/public.css">
+	<link rel="stylesheet" href="../../../css/index/data/user_trend.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="../../../public/css/jquery-ui.min.css">
+</head>
+<body>
+	<div class="contain clearfix">
+		<div class="list">
+			<h3 class="tits">
+				<span>
+					<i class="icon-list-alt"></i>
+					广告位统计
+				</span>
+			</h3>
+			<div class="search">
+				<p>
+					<!-- <select name="" id="">
+						<option value="">客户1</option>
+						<option value="">客户2</option>
+					</select> -->
+					<label for="from" class="icon-calendar">
+						<input type="text" id="from" name="from" placeholder="请选择起始日期">
+					</label>
+					<span>至</span>
+					<label for="to" class="icon-calendar">
+						<input type="text" id="to" name="to" placeholder="请选择起始日期">
+					</label>
+
+
+                    <span>应用名称</span> 
+                    <select name="">
+                        <option value="">全部</option>
+                        <option value="">应用一</option>
+                        <option value="">应用二</option>
+                        <option value="">应用三</option>
+                    </select>
+
+                    
+					<a href="#">查询</a>
+
+				</p>
+				
+			</div>
+			<div class="alist">
+				<table class="account_table">
+					<thead>
+						<th>广告位</th>
+						<th>请求数</th>
+						<th>展现数</th>
+						<th>填充率</th>
+						<th>点击数</th>
+						<th>点击率</th>
+						<th>eCPM</th>
+						<th>CPC</th>
+						<th>结算</th>
+				</thead>
+					<tbody class="accontlist">
+						<tr>
+							<td>伪应用内插屏</td>
+							<td>44544</td>
+							<td>23213</td>
+							<td>80%</td>
+							<td>231</td>
+							<td>4%</td>
+							<td>2.12</td>
+							<td>32%</td>
+							<td>234.12</td>
+						</tr>
+						<tr>
+							<td>伪应用内贝横幅</td>
+							<td>44544</td>
+							<td>23213</td>
+							<td>80%</td>
+							<td>231</td>
+							<td>4%</td>
+							<td>2.12</td>
+							<td>32%</td>
+							<td>234.12</td>
+						</tr>
+
+                        <tr>
+							<td>伪应用内信息流</td>
+							<td>44544</td>
+							<td>23213</td>
+							<td>80%</td>
+							<td>231</td>
+							<td>4%</td>
+							<td>2.12</td>
+							<td>32%</td>
+							<td>234.12</td>
+						</tr>
+
+                        <tr>
+							<td>高亮插屏</td>
+							<td>44544</td>
+							<td>23213</td>
+							<td>80%</td>
+							<td>231</td>
+							<td>4%</td>
+							<td>2.12</td>
+							<td>32%</td>
+							<td>234.12</td>
+						</tr>
+
+                        <tr>
+							<td>链接WIFI开屏</td>
+							<td>44544</td>
+							<td>23213</td>
+							<td>80%</td>
+							<td>231</td>
+							<td>4%</td>
+							<td>2.12</td>
+							<td>32%</td>
+							<td>234.12</td>
+						</tr>
+
+                      
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	<div class="list_mask"></div>
+	<div class="post_tips"></div>
+</body>
+<script src="../../../public/js/jquery-1.10.2.min.js"></script>
+<script src="../../../js/index/settlement-list.js"></script>
+<script src="../../../public/js/public.js"></script>
+<script src="../../../public/js/jquery-ui.min.js"></script>
+<script>
+  
+  $(function() {
+  	
+    $( "#from" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      numberOfMonths: 1,
+      onClose: function( selectedDate ) {
+        $( "#to" ).datepicker( "option", "minDate", selectedDate );
+      }
+    });
+    $( "#to" ).datepicker({
+      defaultDate: "+1w",
+      changeMonth: true,
+      numberOfMonths: 1,
+      onClose: function( selectedDate ) {
+        $( "#from" ).datepicker( "option", "maxDate", selectedDate );
+      }
+    });
+  });
+</script>
+</html>

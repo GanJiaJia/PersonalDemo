@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>流量策略管理列表</title>
+    <link rel="stylesheet" href="../../../public/css/public.css">
+    <link rel="stylesheet" href="../../../css/index/base.css">
+    <link rel="stylesheet" href="../../../css/index/strategy/flow_mannage.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+    <div class="contain clearfix">
+        <div class="list">
+            <h3 class="tits">
+                <span>
+					<i class="icon-list-alt"></i>
+					流量策略管理创建或修改
+				</span>
+                <a href="#" id="equipment"><i class="icon-plus icon-large"></i> <em>添加流量策略</em></a>
+            </h3>
+
+            <div class="alist">
+                <table class="account_table">
+                    <thead>
+                        <th>触发策略名称</th>
+                        <th>触发事件</th>
+                        <th>优先级</th>
+                        <th>创建时间</th>
+                        <th>修改时间</th>
+                        <th>修改人员</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </thead>
+                    <tbody class="accontlist">
+                        <tr>
+                            <td>策略一</td>
+                            <td class="xh">栈顶应用高屏链接WIFI</td>
+                            <td class="xh">1</td>
+                            <td class="xh">2017-6-1</td>
+                            <td>2017-6-2</td>
+                            <td>管理员1</td>
+                            <td><a href="#" class="toggle toggle--on"></a></td>
+                            <td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                <input type="button" value="删除">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>优质用户优化策略</td>
+                            <td class="xh">亮屏链接WIFI</td>
+                            <td class="xh">8</td>
+                            <td class="xh">2017-6-1</td>
+                            <td>2017-6-2</td>
+                            <td>管理员1</td>
+                            <td><a href="#" class="toggle toggle--on"></a></td>
+                            <td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                <input type="button" value="删除">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>垃圾渠道暴力策略</td>
+                            <td class="xh">栈顶应用链接WIFI</td>
+                            <td class="xh">4</td>
+                            <td class="xh">2017-6-1</td>
+                            <td>2017-6-2</td>
+                            <td>管理员1</td>
+                            <td><a href="#" class="toggle toggle--on"></a></td>
+                            <td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                <input type="button" value="删除">
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <!--分页控制-->
+                <div class="control-page">
+                    <button type="button">上一页</button>
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>...</span>
+                    <button type="button">下一页</button>
+                </div>
+            </div>
+            <!-- 流量策略管理创建或修改-->
+            <div class="add_account" id="add_equipments">
+                <i class="close icon-remove"></i>
+                <h4>流量策略管理创建或修改</h4>
+                <div class="act app-select">
+                    <span>策略名称:</span>
+                    <input type="text" class="equipment_name">
+                </div>
+
+                <div class="act advs-type">
+
+                    <span>广告类型:</span>
+                    <input type="checkbox" id="flow_banner" checked>
+                    <label for="flow_banner">横幅</label>
+
+                    <input type="checkbox" id="flow_plaque" checked>
+                    <label for="flow_plaque">插屏</label>
+
+                    <input type="checkbox" id="flow_screen" checked>
+                    <label for="flow_screen">插屏</label>
+
+                    <input type="checkbox" id="flow_info" checked>
+                    <label for="flow_info">插屏</label>
+                </div>
+
+
+                <!--广告位-->
+                <div class="act advs-pos">
+                    <span>广告位:</span>
+
+                    <select multiple="multiple">
+                        <option selected>未选广告位</option>
+                        <option>流量王</option>
+                        <option>应用内插屏</option>
+                        <option>亮屏插屏</option>
+                        <option>泡泡龙</option>
+                     </select>
+
+                    <select size="20" multiple="multiple">
+                        <option selected>已选广告位</option>
+                        <option>流量王</option>
+                        <option>应用内插屏</option>
+                     </select>
+                </div>
+
+
+
+                <!--广告售卖方式-->
+                <div class="act">
+                    <span>广告售卖方式:</span>
+                    <input type="checkbox" checked id="flow_sale">
+                    <label for="flow_sale">默认设置</label>
+                </div>
+
+                <div class="act advs-sale-style">
+                    <input type="checkbox" id="feiyang" checked>
+                    <label for="feiyang">飞扬</label>
+
+                    <strong>权重</strong>
+                    <input type="text">
+
+                    <em>每日最高请求</em>
+                    <input type="text">
+
+                    <em>每日最高曝光</em>
+                    <input type="text">
+
+                    <em>每日最高点击数</em>
+                    <input type="text">
+                </div>
+
+                <div class="act advs-sale-style">
+                    <input type="checkbox" id="jianguo" checked>
+                    <label for="jianguo">坚果</label>
+
+                    <strong>权重</strong>
+                    <input type="text">
+
+                    <em>每日最高请求</em>
+                    <input type="text">
+
+                    <em>每日最高曝光</em>
+                    <input type="text">
+
+                    <em>每日最高点击数</em>
+                    <input type="text">
+                </div>
+
+                <div class="act advs-sale-style">
+                    <input type="checkbox" id="yydsp" checked>
+                    <label for="yydsp">鹰眼DSP</label>
+
+                    <strong>权重</strong>
+                    <input type="text">
+
+                    <em>每日最高请求</em>
+                    <input type="text">
+
+                    <em>每日最高曝光</em>
+                    <input type="text">
+
+                    <em>每日最高点击数</em>
+                    <input type="text">
+                </div>
+
+                <!--自动关闭-->
+                <div class="act auto-close">
+                    <span>自动关闭</span>
+                    <input type="checkbox" checked>
+                    <strong>展示时间</strong>
+                    <select name="">
+                        <option value=""> 1 </option>
+                        <option value=""> 2 </option>
+                        <option value=""> 3 </option>
+                        <option value=""> 4 </option>
+                        <option value=""> 5 </option>
+                        <option value=""> 6 </option>
+                        <option value=""> 7 </option>
+                        <option value=""> 8 </option>
+                    </select>
+                    <em>秒</em>
+                </div>
+
+                 <div class="act auto-click">
+                    <span>自动点击</span>
+                    <input type="checkbox" checked>
+                    <strong>概率</strong>
+
+                    <input type="text">%
+
+                    <strong>展示时间</strong>
+                    <select name="">
+                        <option value=""> 1 </option>
+                        <option value=""> 2 </option>
+                        <option value=""> 3 </option>
+                        <option value=""> 4 </option>
+                        <option value=""> 5 </option>
+                        <option value=""> 6 </option>
+                        <option value=""> 7 </option>
+                        <option value=""> 8 </option>
+                    </select>
+
+                    <select name="">
+                        <option value=""> 1 </option>
+                        <option value=""> 2 </option>
+                        <option value=""> 3 </option>
+                        <option value=""> 4 </option>
+                        <option value=""> 5 </option>
+                        <option value=""> 6 </option>
+                        <option value=""> 7 </option>
+                        <option value=""> 8 </option>
+                    </select>
+                    <em>秒</em>
+                </div>
+
+                 <!--隐藏广告位-->
+                <div class="act hide-advs">
+                    <span>隐藏广告位:</span>
+                    <input type="checkbox" checked >
+                </div>  
+                <!--下载类广告-->
+                <div class="act download-advs">
+                    <span>下载类广告</span>
+                    <input type="checkbox">
+                    <em>安装提醒</em>&nbsp;
+
+                    <strong>周期</strong>
+                    <select name="" >
+                        <option value=""> 1 </option>
+                        <option value=""> 2 </option>
+                        <option value=""> 3 </option>
+                        <option value=""> 4 </option>
+                        <option value=""> 5 </option>
+                        <option value=""> 6 </option>
+                    </select>
+                    <em>小时</em>&nbsp;
+
+
+                     <strong>每日最大提醒数</strong>
+                    <select name="" >
+                        <option value=""> 1 </option>
+                        <option value=""> 2 </option>
+                        <option value=""> 3 </option>
+                        <option value=""> 4 </option>
+                        <option value=""> 5 </option>
+                        <option value=""> 6 </option>
+                    </select>
+                    <input type="checkbox" class="last-check"><strong>激活应用</strong>&nbsp;
+                </div>
+                <!--优先级-->
+                 <div class="act">
+                    <span>优先级:</span>
+                    <select name="">
+                    
+                        <option value=""> 1 </option>
+                        <option value=""> 2 </option>
+                        <option value=""> 3 </option>
+                        <option value=""> 4 </option>
+                        <option value=""> 5 </option>
+                        <option value=""> 6 </option>
+                        <option value=""> 7 </option>
+                        <option value=""> 8 </option>
+                        <option value=""> 9 </option>
+                        <option value=""> 10 </option> 
+                    </select>
+                </div>  
+                <div class="btn">
+                    <span class="add_ok" id="add_equipment_btn"><i class="icon-ok"></i></span><span class="add_cancle"><i class="icon-remove"></i></span>
+                </div>
+
+               
+            </div>
+        </div>
+    </div>
+    <div class="list_mask"></div>
+    <div class="post_tips"></div>
+</body>
+<script src="../../../public/js/jquery-1.10.2.min.js"></script>
+<script src="../../../js/index/equipment-list.js"></script>
+<script src="../../../public/js/public.js"></script>
+
+<script>
+</script>
+
+</html>

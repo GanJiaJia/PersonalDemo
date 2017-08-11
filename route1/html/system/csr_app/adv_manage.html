@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>广告位管理</title>
+    <link rel="stylesheet" href="../../../public/css/public.css">
+    <link rel="stylesheet" href="../../../css/index/base.css">
+    <link rel="stylesheet" href="../../../css/index/csr_app/adv_manage.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+    <div class="contain clearfix">
+        <div class="list">
+            <h3 class="tits">
+                <span>
+					<i class="icon-list-alt"></i>
+					应用管理
+				</span>
+                <!--类型-->
+                <span>广告类型</span>
+                <select class="head-sel">
+						<option value="">横幅</option>
+						<option value="">插屏</option>
+						<option value="">开屏</option>
+						<option value="">信息流</option>
+					</select>
+                <button type="button">查询</button>
+
+
+                <!--应用-->
+                <span>应用</span>
+                <select class="head-sel">
+						<option value="">横幅</option>
+						<option value="">插屏</option>
+						<option value="">开屏</option>
+						<option value="">信息流</option>
+					</select>
+                <button type="button">查询</button>
+
+                
+                <!--搜索框-->
+                <em class="search-em">
+					<i class="icon-search"></i>
+					<input type="search">
+					<input type="button" value="搜索">
+					</em>
+
+                <a href="#" id="equipment"><i class="icon-plus icon-large"></i> <em>添加应用</em></a>
+            </h3>
+
+            <div class="alist">
+                <table class="account_table">
+                    <thead>
+                        <th>广告位ID</th>
+                        <th>广告位名称</th>
+                        <th>广告位类型</th>
+                        <th>广告位性质</th>
+                        <th>所属应用</th>
+                        <th>关联平台</th>
+                        <th>优先流量策略</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </thead>
+                    <tbody class="accontlist">
+                        <tr>
+                            <td>1000001</td>
+                            <td class="xh">伪应用内插屏</td>
+                            <td class="xh">插屏</td>
+                            <td class="xh">主动触发</td>
+                            <td>鹰眼无界面</td>
+                            <td>飞扬 坚果</td>
+                            <td>策略一</td>
+                            <td><a href="#" class="toggle toggle--on"></a></td>
+                            <td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                 <input type="button" value="删除">
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>1000001</td>
+                            <td class="xh">伪应用内插屏</td>
+                            <td class="xh">插屏</td>
+                            <td class="xh">主动触发</td>
+                            <td>鹰眼无界面</td>
+                            <td>飞扬 坚果</td>
+                            <td>策略一</td>
+                            <td><a href="#" class="toggle toggle--on"></a></td>
+                            <td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                 <input type="button" value="删除">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>1000001</td>
+                            <td class="xh">伪应用内信息流</td>
+                            <td class="xh">信息流</td>
+                            <td class="xh">主动触发</td>
+                            <td>鹰眼无界面</td>
+                            <td>坚果</td>
+                            <td>策略一</td>
+                            <td><a href="#" class="toggle toggle--on"></a></td>
+                            <td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                 <input type="button" value="删除">
+                            </td>
+                        </tr>
+
+
+                        <tr>
+                            <td>1000001</td>
+                            <td class="xh">高亮插屏</td>
+                            <td class="xh">插屏</td>
+                            <td class="xh">主动触发</td>
+                            <td>鹰眼无界面</td>
+                            <td>飞扬</td>
+                            <td>策略一</td>
+                            <td><a href="#" class="toggle toggle--on"></a></td>
+                            <td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                 <input type="button" value="删除">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>1000001</td>
+                            <td class="xh">高亮插屏2</td>
+                            <td class="xh">插屏</td>
+                            <td class="xh">主动触发</td>
+                            <td>鹰眼无界面</td>
+                            <td>飞扬</td>
+                            <td>策略一</td>
+                            <td><a href="#" class="toggle toggle--on"></a></td>
+                            <td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                 <input type="button" value="删除">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--分页控制-->
+                <div class="control-page">
+                    <button type="button">上一页</button>
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>...</span>
+                    <button type="button">下一页</button>
+                </div>
+            </div>
+            <!-- 添加广告位 -->
+            <div class="add_account" id="add_equipments">
+                <i class="close icon-remove"></i>
+                <h4>添加广告位</h4>
+                <div class="act">
+                    <span>所属应用:</span>
+                    <select name="">
+                       <option value="">流量王</option>
+                       <option value="">无界面1</option>
+                   </select>
+                    <!--<i class="icon-asterisk"></i>
+                    <div class="addaccount_tips ln"></div>-->
+                </div>
+                <div class="act">
+                    <span>广告位名称:</span>
+                    <input type="text" class="equipment_url">
+                </div>
+                <div class="act">
+                    <span>广告类型:</span>
+                    <select name="">
+
+                       <option value="">插屏</option>
+                       <option value="">信息流</option>
+                       <option value="">banner</option>
+                       <option value="">开屏</option>
+                   </select>
+                </div>
+
+                <div class="btn">
+                    <span class="add_ok" id="add_equipment_btn"><i class="icon-ok"></i></span><span class="add_cancle"><i class="icon-remove"></i></span>
+                </div>
+            </div>
+            <!-- 编辑广告位信息 -->
+            <div class="add_account" id="edit_equipment">
+                <i class="close icon-remove"></i>
+                <h4>编辑广告位</h4>
+                <div class="act">
+                    <span>所属应用:</span>
+                    <select name="">=
+                        <option value="">流量王</option>
+                    </select>
+                    <!--<i class="icon-asterisk"></i>
+                    <div class="addaccount_tips ln"></div>-->
+                </div>
+
+                <div class="act">
+                    <span>广告位名称</span>
+                    <input type="text" class="edit_equipment_url" value="">
+                </div>
+                <div class="act">
+                    <span>广告类型:</span>
+                    <select name="">
+
+                        <option value="">插屏</option>
+                        <option value="">信息流</option>
+                        <option value="">banner</option>
+                        <option value="">开屏</option>
+                    </select>
+                </div>
+
+                <div class="act">
+                    <span>广告位ID:</span>
+                    <input type="text" class="edit_equipment_url" value="5874521" disabled>
+                </div>
+
+                <h5>聚合广告平台广告位映射配置</h5>
+                <!--<div class="act areat">
+                    <span>备注:</span>
+                    <textarea name="" class="edit_equipment_remark" cols="30" rows="10" placeholder="请输入备注信息"></textarea>
+                    <div class="clear"></div>
+                </div>-->
+
+                <div class="act relation-adv">
+                    <span>飞扬(广点通)</span>
+                    <em>关联应用</em>
+                    <select name="">
+                        <option value="">未关联</option>
+                        <option value="">早行</option>
+                        <option value="">第一高尔夫</option>
+                    </select>
+                    <em>关联广告位</em>
+                    <select name="">
+                        <option value="">未关联</option>
+                        <option value="">21222123123</option>
+                        <option value="">21222132432</option>
+                        <option value="">45222132432</option>
+                    </select>
+                </div>
+
+                <div class="btn">
+                    <span class="add_ok" id="edit_equipment_btn"><i class="icon-ok"></i></span><span class="add_cancle"><i class="icon-remove"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list_mask"></div>
+    <div class="post_tips"></div>
+</body>
+<script src="../../../public/js/jquery-1.10.2.min.js"></script>
+<script src="../../../js/index/equipment-list.js"></script>
+<script src="../../../public/js/public.js"></script>
+
+</html>

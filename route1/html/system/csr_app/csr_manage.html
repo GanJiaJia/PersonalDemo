@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>客户管理</title>
+    <link rel="stylesheet" href="../../../public/css/public.css">
+    <link rel="stylesheet" href="../../../css/index/base.css">
+    <link rel="stylesheet" href="../../../css/index/csr_app/csr_manage.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+    <div class="contain clearfix">
+        <div class="list">
+            <h3 class="tits">
+                <span>
+					<i class="icon-list-alt"></i>
+					客户管理
+				</span>
+                <a href="#" id="equipment"><i class="icon-plus icon-large"></i> <em>添加客户</em></a>
+            </h3>
+
+            <div class="alist">
+                <table class="account_table">
+                    <thead>
+                        <th>账号</th>
+                        <th>用户名称</th>
+                        <th>公司名称</th>
+                        <th>创建时间</th>
+                        <th>修改时间</th>
+                        <th>操作人员</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </thead>
+                    <tbody class="accontlist">
+                        <tr>
+                            <td>abc@qq.com</td>
+                            <td class="xh">豆豆</td>
+                            <td class="xh">豆豌</td>
+                            <td class="xh">2017/2/3 12:22:21</td>
+                            <td>2015/3/4 3:21:43</td>
+                            <td>admin</td>
+                            <td>正常</td>
+                            <td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                <input type="button" value="删除">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>abc@qq.com</td>
+                            <td class="xh">豆豆</td>
+                            <td class="xh">豆豌</td>
+                            <td class="xh">2017/2/3 12:22:21</td>
+                            <td>2015/3/4 3:21:43</td>
+                            <td>admin</td>
+                            <td>正常</td>
+                            <td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                <input type="button" value="删除">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="control-page">
+
+                    <button type="button">上一页</button>
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>...</span>
+                    <button type="button">下一页</button>
+
+                </div>
+            </div>
+            <!-- 添加客户 -->
+            <div class="add_account" id="add_equipments">
+                <i class="close icon-remove"></i>
+                <h4>添加客户</h4>
+                <div class="act">
+                    <span>账号*</span>
+                    <input type="text" class="equipment_name">
+                    <i class="icon-asterisk"></i>
+                    <div class="addaccount_tips ln"></div>
+                </div>
+
+                <div class="act">
+                    <span>密码*</span>
+                    <input type="password" class="equipment_name">
+                    <i class="icon-asterisk"></i>
+                    <div class="addaccount_tips ln"></div>
+                </div>
+
+                <div class="act">
+                    <span>用户名称*</span>
+                    <input type="text" class="equipment_url">
+                </div>
+                <div class="act">
+                    <span>公司名称</span>
+                    <input type="text" class="equipment_lurl">
+                </div>
+                <div class="act areat">
+                    <span>备注信息</span>
+                    <textarea name="" class="equipment_remark" cols="30" rows="10" placeholder="请输入备注信息"></textarea>
+                    <div class="clear"></div>
+                </div>
+                <div class="btn">
+                    <span class="add_ok" id="add_equipment_btn"><i class="icon-ok"></i></span><span class="add_cancle"><i class="icon-remove"></i></span>
+                </div>
+            </div>
+            <!-- 修改客户信息 -->
+            <div class="add_account" id="edit_equipment">
+                <i class="close icon-remove"></i>
+                <h4>编辑客户</h4>
+                <div class="act">
+                    <span>账号*</span>
+                    <input type="text" class="edit_equipment_name">
+                    <i class="icon-asterisk"></i>
+                    <div class="addaccount_tips ln"></div>
+                </div>
+                <div class="act">
+                    <span>密码*</span>
+                    <input type="password" class="edit_equipment_name">
+                    <i class="icon-asterisk"></i>
+                    <div class="addaccount_tips ln"></div>
+                </div>
+                <div class="act">
+                    <span>用户名称</span>
+                    <input type="text" class="edit_equipment_url">
+                </div>
+                <div class="act">
+                    <span>公司名称</span>
+                    <input type="text" class="edit_equipment_lurl">
+                </div>
+
+                <div class="act">
+                    <span>账号状态</span>
+                    <select>
+                        <option value="">正常</option>
+                        <option value="">无效</option>
+                    </select>
+                </div>
+
+                <div class="act areat">
+                    <span>备注:</span>
+                    <textarea name="" class="edit_equipment_remark" cols="30" rows="10" placeholder="请输入备注信息"></textarea>
+                    <div class="clear"></div>
+                </div>
+                <div class="btn">
+                    <span class="add_ok" id="edit_equipment_btn"><i class="icon-ok"></i></span><span class="add_cancle"><i class="icon-remove"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="list_mask"></div>
+    <div class="post_tips"></div>
+</body>
+<script src="../../../public/js/jquery-1.10.2.min.js"></script>
+<script src="../../../js/index/equipment-list.js"></script>
+<script src="../../../public/js/public.js"></script>
+
+<script>
+</script>
+
+</html>

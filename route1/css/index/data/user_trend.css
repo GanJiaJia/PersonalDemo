@@ -1,0 +1,136 @@
+@charset 'utf-8';
+.contain {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 30px;
+}
+.list {
+	box-sizing: border-box;
+    width: 100%;
+}
+.tits {
+	background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 1px 20px 3px #ccc;
+    height: 50px;
+    line-height: 50px;
+    width: 100%;
+}
+.list h3 span, .list h3 a {
+    border-radius: 4px 4px 0 0;
+    color: #333;
+    float: left;
+    font-size: 16px;
+    padding: 0 15px;
+}
+.list h3 a {
+	background: #6ca6cd none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #fff;
+    float: right;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    margin: 5px 5px 0;
+}
+.search {
+	margin-top: 10px;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+.search select {
+	float: left;
+	min-width: 120px;
+	height: 32px;
+	text-align: center;
+	border: 1px solid #ccc;
+	margin: 9px 5px 0;
+}
+.search p {
+	float: left;
+	width: auto;
+    margin-top: 9px;
+}
+.search a {
+	background: #6ca6cd none repeat scroll 0 0;
+    border-radius: 4px;
+    color: #fff;
+    float: right;
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    margin: 0px 10px 0;
+    float: left;
+    font-size: 16px;
+    padding: 0 15px;
+}
+.search p label {
+    float: left;
+    width: 190px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-indent: 5px;
+}
+.search p label input {
+    display: inline-block;
+    width: 150px;
+    height: 24px;
+    border: none;
+    text-indent: 5px;
+}
+.search p span {
+    float: left;
+    height: 32px;
+    margin: 0 10px;
+    line-height: 32px;
+}
+.total {
+    float: right;
+    color: #666;
+    margin-right: 20px;
+}
+.total span,.total em {
+    float: left;
+    font-size: 16px;
+}
+.total em {
+    margin-left: 5px;
+    font-size: 16px;
+}
+.total span.t {
+    margin-left: 20px;
+}
+.alist {
+    margin-top: 10px;
+    width: 100%;
+}
+.alist table {
+    background: #fff none repeat scroll 0 0;
+    border-color: #ccc;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px 0 0 1px;
+    box-shadow: 1px 1px 20px 3px #ccc;
+    position: relative;
+    width: 100%;
+}
+.alist table th {
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    background: #eee;
+}
+.alist table td, .alist table th {
+    border-color: #ccc;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    color: #808080;
+    padding: 10px;
+    text-align: center;
+}
+.contain .search select{
+    margin: 0;
+}

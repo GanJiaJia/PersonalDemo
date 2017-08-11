@@ -1,0 +1,87 @@
+div.add_account {
+    
+    width: 900px;
+    
+    }
+
+div.add_account div.advs-type input[type="checkbox"]{
+
+    float: none;
+    margin-right: 1px;
+
+}
+
+div.add_account div.advs-type label{
+
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 20px;
+    margin-top: -50px;
+}
+/*广告位置*/
+div.add_account div.advs-pos{
+
+    height: 120px;
+    padding-bottom:30px;
+    border-bottom: 1px solid #ccc;
+}
+
+div.add_account div.advs-pos select{
+
+    height: 120px;
+    margin-right: 20px;
+}
+
+/*售卖方式*/
+div.add_account div.advs-sale-style input[type="text"]{
+
+    float: none;
+    width: 60px;
+
+}
+
+
+div.add_account div.advs-sale-style input[type="checkbox"]{
+
+    margin-left: 139px;
+}
+
+
+div.add_account div.advs-sale-style label{
+    display: inline-block;
+    width: 60px;
+}
+div.add_account div.advs-sale-style strong{
+    margin-left: 20px;
+}
+
+/*自动点击*/
+
+div.add_account div.auto-click input[type="text"]{
+
+    float: none;
+    width: 60px;
+    margin-right: 1px;
+}
+
+div.add_account div.auto-click strong:nth-child(5){
+
+    margin-left: 30px;
+}
+
+div.add_account div.download-advs input[type="checkbox"]{
+
+    float: none;
+    margin-right: 0px;
+
+}
+
+div.add_account div.download-advs em{
+    margin-right: 20px;
+    
+}
+
+div.add_account div.download-advs .last-check{
+    margin-left: 20px;
+}

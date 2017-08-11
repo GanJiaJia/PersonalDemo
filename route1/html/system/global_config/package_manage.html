@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>包名配置</title>
+	<link rel="stylesheet" href="../../../public/css/public.css">
+	<link rel="stylesheet" href="../../../css/index/base.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css"/>
+
+</head>
+<body>
+	<div class="contain clearfix">
+		<div class="list">
+			<h3 class="tits">
+				<span>
+					<i class="icon-list-alt"></i>
+					报名配置
+				</span>
+                <button type="button">导入</button>
+                <button type="button">导出</button>
+				<a href= "#" id="equipment" ><i class="icon-plus icon-large"></i> <em>添加</em></a>
+			</h3>
+		
+			<div class="alist">
+				<table class="account_table">
+					<thead>
+						<th>序号</th>
+						<th>应用名称</th>
+						<th>包名</th>
+						<th>操作</th>
+				   </thead>
+					<tbody class="accontlist">
+						<tr>
+							<td>1</td>
+							<td class="xh">UC流量器</td>
+							<td class="xh">com.ucmobile.ssd</td>
+							<td class="xh"><button>修改</button> <button>删除</button></td>
+						</tr>
+
+                        <tr>
+							<td>1</td>
+							<td class="xh">QQ流量器</td>
+							<td class="xh">com.ucmobile.ssd</td>
+							<td class="xh"><button>修改</button> <button>删除</button></td>
+						</tr>
+
+                       
+						
+                        	
+					</tbody>
+				</table>
+			</div>
+			<!-- 添加应用 -->
+			<div class="add_account" id="add_equipments">
+				<i class="close icon-remove"></i>
+				<h4>添加</h4>
+				<!--<div class="act">
+					<span>序号:</span>
+					<input type="text" class="equipment_name">-->
+					<!--<i class="icon-asterisk"></i>
+					<div class="addaccount_tips ln"></div>-->
+				<!--</div>-->
+				<div class="act">
+					<span>应用名称:</span>
+					<input type="text" class="equipment_url">
+				</div>
+				<div class="act">
+					<span>包名:</span>
+					<input type="text" class="equipment_lurl">
+				</div>
+				<div class="act areat">
+					<span>备注:</span>
+					<textarea name="" class="equipment_remark" cols="30" rows="10" placeholder="请输入备注信息"></textarea>
+					<div class="clear"></div>
+				</div>
+				<div class="btn">
+					<span class="add_ok" id="add_equipment_btn"><i class="icon-ok"></i></span><span class="add_cancle"><i class="icon-remove"></i></span>
+				</div>		
+			</div>
+			<!-- 修改设备信息 -->
+			<div class="add_account" id="edit_equipment">
+				<i class="close icon-remove"></i>
+				<h4>添加</h4>
+				<div class="act">
+					<span>设备型号:</span>
+					<input type="text" class="edit_equipment_name" placeholder="请输入设备型号">
+					<i class="icon-asterisk"></i>
+					<div class="addaccount_tips ln"></div>
+				</div>
+				<div class="act">
+					<span>工具链资料地址:</span>
+					<input type="text" class="edit_equipment_url" placeholder="请输入工具链资料地址">
+				</div>
+				<div class="act">
+					<span>SDK下载地址:</span>
+					<input type="text" disabled="disabled" class="edit_equipment_lurl" value="无">
+				</div>
+				<div class="act areat">
+					<span>备注:</span>
+					<textarea name="" class="edit_equipment_remark" cols="30" rows="10" placeholder="请输入备注信息"></textarea>
+					<div class="clear"></div>
+				</div>
+				<div class="btn">
+					<span class="add_ok" id="edit_equipment_btn"><i class="icon-ok"></i></span><span class="add_cancle"><i class="icon-remove"></i></span>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="list_mask"></div>
+	<div class="post_tips"></div>
+</body>
+<script src="../../../public/js/jquery-1.10.2.min.js"></script>
+<script src="../../../js/index/equipment-list.js"></script>
+<script src="../../../public/js/public.js"></script>
+
+<script>
+
+</script>
+</html>

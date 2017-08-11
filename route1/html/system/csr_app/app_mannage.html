@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>应用管理</title>
+	<link rel="stylesheet" href="../../../public/css/public.css">
+	<link rel="stylesheet" href="../../../css/index/base.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css"/>
+<style>
+
+	
+</style>
+</head>
+<body>
+	<div class="contain clearfix">
+		<div class="list">
+			<h3 class="tits">
+				<span>
+					<i class="icon-list-alt"></i>
+					应用管理
+				</span>
+				
+					<span>客户</span>
+					<select class="head-sel">
+						<option value="">客户一</option>
+						<option value="">客户二</option>
+						<option value="">客户三</option>
+					</select>
+					<button type="button">查找</button>
+			
+					<!--搜索框-->
+					<em class="search-em">
+					<i class="icon-search"></i>
+					<input type="search">
+					<input type="button" value="搜索">
+					</em>
+				
+				<a href= "#" id="equipment" ><i class="icon-plus icon-large"></i> <em>添加应用</em></a>
+			</h3>
+		
+			<div class="alist">
+				<table class="account_table">
+					<thead>
+						<th>应用ID</th>
+						<th>应用名称</th>
+						<th>客户</th>
+						<th>优先触发策略</th>
+						<th>创建时间</th>
+						<th>修改时间</th>
+						<th>操作人员</th>
+						<th>投放状态</th>
+						<th>操作</th>
+				</thead>
+					<tbody class="accontlist">
+						<tr>
+							<td>32342342</td>
+							<td class="xh">流量王</td>
+							<td class="xh">豆豌科技</td>
+							<td class="xh">策略一</td>
+							<td>2017/2/3  12:22:21</td>
+							<td>2015/3/4  3:21:43</td>
+							<td>豆豆</td>
+                            <td><a href="#" class="toggle toggle--on"></a></td>
+							<td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                 <input type="button" value="删除">
+                            </td>
+						</tr>
+						
+                        	<tr>
+							<td>32342342</td>
+							<td class="xh">流量王</td>
+							<td class="xh">鹰眼科技</td>
+							<td class="xh">-</td>
+							<td>2017/2/3  12:22:21</td>
+							<td>2015/3/4  3:21:43</td>
+							<td>豆豆</td>
+                            <td><a href="#" class="toggle toggle--on"></a></td>
+							<td class="last-td">
+                                <span class="edit icon-pencil"></span>
+                                 <input type="button" value="删除">
+                            </td>
+						</tr>
+					</tbody>
+				</table>
+
+				 <div class="control-page">
+                    <button type="button">上一页</button>
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>...</span>
+                    <button type="button">下一页</button>
+                </div>
+			</div>
+			<!-- 添加应用 -->
+			<div class="add_account" id="add_equipments">
+				<i class="close icon-remove"></i>
+				<h4>添加应用</h4>
+				<div class="act">
+					<span>客户:</span>
+					<select  style="height:25px">
+
+						<option value="">豆豌科技</option>
+						<option value="">锐讯无线</option>
+
+					</select>
+					<!--<input type="text" >-->
+					<!--<i class="icon-asterisk"></i>
+					<div class="addaccount_tips ln"></div>-->
+				</div>
+				<div class="act">
+					<span>应用名称*</span>
+					<input type="text" class="equipment_url">
+				</div>
+				<div class="act">
+					<span>自动添加触发广告位</span>
+					<input type="checkbox">
+				</div>
+				
+				<div class="btn">
+					<span class="add_ok" id="add_equipment_btn"><i class="icon-ok"></i></span><span class="add_cancle"><i class="icon-remove"></i></span>
+				</div>		
+			</div>
+			<!-- 修改设备信息 -->
+			<div class="add_account" id="edit_equipment">
+				<i class="close icon-remove"></i>
+				<h4>编辑应用</h4>
+				<div class="act">
+					<span>客户</span>
+					<input type="text" class="edit_equipment_name">
+					<!--<i class="icon-asterisk"></i>
+					<div class="addaccount_tips ln"></div>-->
+				</div>
+				<div class="act">
+					<span>应用ID:</span>
+					<input type="text" class="edit_equipment_url" >
+				</div>
+				<div class="act">
+					<span>应用名称*:</span>
+					<input type="text"  class="edit_equipment_lurl" value="无">
+				</div>
+				<div class="btn">
+					<span class="add_ok" id="edit_equipment_btn"><i class="icon-ok"></i></span><span class="add_cancle"><i class="icon-remove"></i></span>
+				</div>		
+			</div>
+		</div>
+	</div>
+	<div class="list_mask"></div>
+	<div class="post_tips"></div>
+</body>
+<script src="../../../public/js/jquery-1.10.2.min.js"></script>
+<script src="../../../js/index/equipment-list.js"></script>
+<script src="../../../public/js/public.js"></script>
+
+
+</html>
+<script>
+
+	// $('.search-em input[type="search"]').on('click',function(){
+	// 	$(this).siblings('i').hide();
+	// }).on('blur',function(){
+	// 	$(this).siblings('i').show();
+	// });
+
+</script>

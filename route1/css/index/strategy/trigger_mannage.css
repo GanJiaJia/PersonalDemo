@@ -1,0 +1,132 @@
+ /*模态框*/
+
+ .add_account {
+     width: 900px;
+ }
+ /*应用选择*/
+
+ div.app-select {
+     width: 100%;
+     text-align: center;
+ }
+
+ .add_account div.app-select select {
+     height: 90px;
+     margin: 0 10px;
+     padding: 0 10px;
+ }
+ /*受众群体*/
+
+ .act .user-group {
+     width: 280px;
+ }
+ /*栈顶应用和判断周期*/
+
+ .add_account div.stack-top-app select {
+     width: 80px;
+     height: 40px;
+     margin: 5px 10px 0px 0px;
+     padding: 3px 0px 3px 20px;
+     font-size: 30px;
+ }
+
+ .add_account div.stack-top-app option {
+     height: 30px;
+     line-height: 30px;
+     vertical-align: top;
+ }
+ /*秒*/
+
+ .stack-top-app em {
+     display: inline-block;
+     height: 30px;
+     line-height: 30px;
+     width: 50px;
+     margin-top: -10px;
+     position: absolute;
+     top: 22px;
+ }
+
+ div.add_account .app-switch input[type="checkbox"] {
+     margin-left: 139px;
+ }
+
+ .app-switch strong {
+     padding-left: 35px;
+ }
+ /*白名单*/
+
+ div.add_account div.write-list {
+     height: 110px;
+     margin-top: 5px;
+ }
+
+ div.add_account div.write-list select {
+     height: 100px;
+ }
+ /*亮屏*/
+
+ div.add_account div.light-screen input[type="checkbox"] {
+     margin-left: 0;
+ }
+
+ div.add_account div.concat-wifi input[type="checkbox"] {
+     margin-left: 0;
+ }
+
+ /*定时闹钟和每日请求*/
+ 
+ div.add_account div.everyday-req input {
+     float: none;
+     width: 80px;
+     margin: 0 10px;
+ }
+
+ div.add_account div.everyday-req em {
+     margin-left: 139px;
+ }
+
+
+ div.add_account div.everyday-req strong{
+
+ }
+
+ /*时段分布*/
+ div.add_account div.time-dis  {
+     height: 150px;
+     border-bottom: 1px solid #ccc;
+ }
+/*表格数据*/
+ div.add_account div.time-dis table{
+     margin-left: 139px;
+     /*border: 1px solid #ddd;*/
+     margin-right: 30px;
+ }
+
+  div.time-dis table  tr{
+     overflow: scroll;
+ }
+
+ div.time-dis table  th{
+    background: #999;
+    border: 1px solid #333;
+    height: 30px;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+ }
+
+ div.time-dis table  td{
+     border: 1px solid #333;
+     height: 30px;
+     line-height: 30px;
+     width: 30px;
+     text-align: center;
+ }
+ /*优先级的后缀文字*/
+div.priority em{
+    color: #ababab;
+}
+
+
+ 

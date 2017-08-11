@@ -1,0 +1,436 @@
+@charset 'utf-8';
+button {
+	outline: none;
+	border: none;
+}
+
+.contain {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 30px;
+}
+
+.list {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.tits {
+	background: #fff none repeat scroll 0 0;
+	border-bottom: 1px solid #ccc;
+	box-shadow: 1px 1px 20px 3px #ccc;
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+}
+
+.list h3 span,
+.list h3 a {
+	border-radius: 4px 4px 0 0;
+	color: #333;
+	float: left;
+	font-size: 16px;
+	padding: 0 15px;
+}
+
+.list h3 a {
+	background: #6ca6cd none repeat scroll 0 0;
+	border-radius: 4px;
+	color: #fff;
+	float: right;
+	font-size: 16px;
+	height: 40px;
+	line-height: 40px;
+	margin: 5px 5px 0;
+}
+
+
+/*搜索框*/
+
+.list button {
+	width: 70px;
+	height: 30px;
+	background: #41c7db;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.list input[type="search"] {
+	width: 200px;
+	margin-left: 50px;
+	height: 30px;
+	border-radius: 20px;
+	border: 1px solid #aaa;
+	padding-left: 20px;
+}
+
+.list input[type="button"] {
+	width: 70px;
+	height: 30px;
+	background: #41c7db;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+}
+
+.search {
+	margin-top: 10px;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+
+.search select {
+	float: left;
+	min-width: 120px;
+	height: 32px;
+	text-align: center;
+	border: 1px solid #ccc;
+	margin: 9px 5px 0;
+}
+
+.search p {
+	float: left;
+	width: auto;
+}
+
+.search a {
+	background: #6ca6cd none repeat scroll 0 0;
+	border-radius: 4px;
+	color: #fff;
+	float: right;
+	font-size: 16px;
+	height: 32px;
+	line-height: 32px;
+	margin: 9px 5px 0;
+	float: left;
+	font-size: 16px;
+	padding: 0 15px;
+}
+
+.alist {
+	margin-top: 20px;
+	width: 100%;
+}
+
+.alist table {
+	background: #fff none repeat scroll 0 0;
+	border-color: #ccc;
+	border-image: none;
+	border-style: solid;
+	border-width: 1px 0 0 1px;
+	box-shadow: 1px 1px 20px 3px #ccc;
+	position: relative;
+	width: 100%;
+}
+
+.alist table th {
+	border-bottom: 1px solid #ccc;
+	color: #333;
+	background: #eee;
+}
+
+.alist table td,
+.alist table th {
+	border-color: #ccc;
+	border-image: none;
+	border-style: solid;
+	border-width: 0 1px 1px 0;
+	color: #808080;
+	padding: 10px;
+	text-align: center;
+}
+
+.add_account {
+	display: none;
+	position: fixed;
+	width: 520px;
+	height: auto;
+	padding-bottom: 20px;
+	left: 37%;
+	top: 15%;
+	background: #fff;
+	border: 2px solid #ccc;
+	/* border-radius: 3px; */
+	box-shadow: 0 0 20px 1px #999;
+	z-index: 100;
+}
+
+.add_account h4 {
+	width: 100%;
+	height: 45px;
+	line-height: 47px;
+	text-align: center;
+	font-size: 18px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+
+.add_account div.act {
+	position: relative;
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+}
+
+.add_account div.act span {
+	float: left;
+	width: 130px;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.add_account div.act input {
+	float: left;
+	width: 280px;
+	height: 28px;
+	text-indent: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	line-height: 28px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: #808080;
+}
+
+.add_account div.act input[type="checkbox"] {
+	float: left;
+	text-indent: 10px;
+	margin-top: 15px;
+	margin-left: -1px;
+	width: 20px;
+	height: 20px;
+	margin-right: 10px;
+	line-height: 28px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	color: #808080;
+}
+
+.add_account div.act input:focus,
+.add_account div.act textarea:focus {
+	border: 1px solid #46be8a;
+}
+
+.add_account div.act i {
+	font-size: 10px;
+	font-weight: 200;
+	color: #ff0000;
+}
+
+.add_account div.act textarea {
+	float: left;
+	margin-top: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 260px;
+	height: 100px;
+	line-height: 18px;
+	resize: none;
+	color: #808080;
+	overflow: hidden;
+}
+
+.add_account div.areat {
+	height: auto;
+}
+
+.add_account div.act select {
+	height: 30px;
+}
+
+.add_account div.btn {
+	width: 100%;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.add_account div.btn span {
+	padding: 8px 50px;
+	margin: 20px 0 0 10px;
+	background: #ccc;
+	border-radius: 3px;
+	font-size: 18px;
+	color: #eee;
+	cursor: pointer;
+}
+
+.add_account div.btn span:hover {
+	box-shadow: 0 0 2px 0px #ccc;
+}
+
+.add_account div.btn span.add_ok {
+	margin-left: 0;
+	background: #87CEFA;
+	color: #fff;
+}
+
+.add_account div.btn span.ok:hover {
+	box-shadow: 0 0 2px 0px #87CEFA;
+}
+
+.add_account .close {
+	position: absolute;
+	padding: 10px;
+	right: 0px;
+	top: 0px;
+	font-size: 18px;
+	cursor: pointer;
+	color: #ccc;
+}
+
+.add_account .close:hover {
+	color: #333;
+}
+
+.addaccount_tips {
+	position: absolute;
+	width: auto;
+	text-align: center;
+	color: #46be8a;
+	top: 11px;
+	right: 98px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.post_tips {
+	display: none;
+	position: fixed;
+	left: 46%;
+	top: 45%;
+	width: 220px;
+	height: 50px;
+	border-radius: 5px;
+	background: #fff;
+	z-index: 100;
+	text-align: center;
+	line-height: 50px;
+	color: #333;
+	font-size: 18px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 20px 2px #ccc;
+}
+
+
+/*投放开关*/
+
+.accontlist a {
+	cursor: pointer;
+}
+
+.toggle {
+	position: relative;
+	display: inline-block;
+	margin: 0 auto;
+	width: 58px;
+	height: 23px;
+	color: white;
+	outline: 0;
+	text-decoration: none;
+	border-radius: 13px;
+	border: 1px solid #546E7A;
+	/*background-color: #263238; */
+	background-color: #fff;
+	transition: all 500ms;
+}
+
+.toggle--on:after {
+	content: 'On';
+	border-radius: 20px 5px 5px 20px;
+	/*color: #66BB6A; */
+	color: #fff;
+	background-color: #41c7db;
+}
+
+.toggle:after {
+	display: block;
+	position: absolute;
+	top: 1px;
+	bottom: 1px;
+	left: 1px;
+	width: calc(55% - 6px);
+	line-height: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 8px;
+	color: white;
+	/*background-color: #37474F;*/
+	border: 1px solid;
+	transition: all 500ms;
+}
+
+.toggle--off:after {
+	content: 'Off';
+	border-radius: 5px 20px 20px 5px;
+	transform: translate(100%, 0);
+	/* color: #f44336; */
+	color: #fff;
+	background-color: #c0c0c0;
+}
+
+
+/*页码控制*/
+
+.control-page {
+	/*position: absolute;*/
+	float: right;
+	margin-top: 30px;
+}
+
+.control-page button {
+	width: 80px;
+	height: 30px;
+	background: #41c7db;
+	cursor: pointer;
+}
+
+.control-page span {
+	display: inline-block;
+	cursor: pointer;
+	width: 20px;
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	background: #eee;
+}
+
+.control-page span.active {
+	background: #ccc;
+}
+
+
+/*下拉框*/
+
+.list .head-sel {
+	margin: 0 10px 0px 20px;
+	height: 30px;
+}
+
+
+/*右边删除按钮*/
+
+.accontlist .last-td span {
+	/*display: flex;*/
+	padding: 0 10px;
+}
+
+
+/*搜索图标*/
+
+.contain .search-em {
+	display: inline-block;
+	position: relative;
+}
+
+.search-em i {
+	position: absolute;
+	left: 17%;
+	top: 18px;
+	font-size: 14px;
+	color: #ccc;
+}
